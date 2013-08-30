@@ -84,22 +84,26 @@ a {
   font-family: Akkurat;
   color: #fff; }
 
+/*** For every section topic ***/
 .section-topic {
   width: 100%;
   margin: auto;
   display: inline-block; }
 
 header.section-header {
-  max-width: 800px;
+  max-width: 1024px;
   margin: auto;
   height: 30px;
-  width: 760px;
+  width: 984px;
   padding: 25px 20px; }
 
 section.section-content {
-  max-width: 800px;
-  margin: auto; }
+  max-width: 1024px;
+  margin: auto;
+  max-width: 1024px; }
 
+/*** Individual styles for each section topic ***/
+/* ### HOME ### */
 section#home .section-header {
   /* the background with two colors */
   background: #404040;
@@ -131,6 +135,7 @@ section#home .section-header {
 section#home .section-content img#front-cover {
   max-width: 100%; }
 
+/* ### WHAT ### */
 section#what .section-header {
   /* the background with two colors */
   background: #ffa600;
@@ -142,8 +147,17 @@ section#what .section-header {
   background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa600', endColorstr='#ffb600', GradientType=0 ); }
 section#what .section-content {
-  min-height: 400px;
-  background: #ffb600; }
+  height: inherit; }
+  section#what .section-content div.content-right {
+    background-color: #ffb600;
+    height: inherit;
+    -webkit-border-radius: 0px 0px 0px 100px;
+    -moz-border-radius: 0px 0px 0px 100px;
+    border-radius: 0px 0px 0px 100px; }
+    section#what .section-content div.content-right img {
+      padding: 50px 0px 50px 40px;
+      max-width: 100%;
+      max-height: 100%; }
 
 /* ==========================================================================
    Helper classes

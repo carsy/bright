@@ -104,6 +104,16 @@ a {
 	color: #fff;
 }
 
+$max-width: 1024px;
+$pad-correction: 20px;
+
+
+@mixin content-center {
+	max-width: $max-width;
+	margin: auto;
+}
+
+/*** For every section topic ***/
 
 .section-topic {
 	width: 100%;
@@ -112,25 +122,21 @@ a {
 	display: inline-block;
 }
 
-
-
-@mixin content-center {
-	max-width: 800px;
-	margin: auto;
-}
-
 header.section-header {
 	@include content-center;
 	height: 30px;
-	width: 760px;
-	padding: 25px 20px;
+	width: $max-width - $pad-correction * 2;
+	padding: 25px $pad-correction;
 }
 
 section.section-content {
 	@include content-center;
+	max-width: $max-width;
 }
 
+/*** Individual styles for each section topic ***/
 
+/* ### HOME ### */
 section#home {
 	.section-header {
 
@@ -185,6 +191,8 @@ section#home {
 	}
 }
 
+
+/* ### WHAT ### */
 section#what {
 	.section-header {
 
@@ -201,9 +209,29 @@ section#what {
 	}
 
 	.section-content {
-		min-height: 400px;
 
-		background: #ffb600;
+		height: inherit;
+
+
+
+		div.content-right {
+			background-color: #ffb600;
+			
+			height: inherit;
+
+			-webkit-border-radius: 0px 0px 0px 100px;
+			-moz-border-radius: 0px 0px 0px 100px;
+			border-radius: 0px 0px 0px 100px;
+
+			img {
+				padding: 50px 0px 50px 40px; 
+				max-width: 100%;
+				max-height: 100%;
+			}
+
+
+		}
+
 	}
 
 }

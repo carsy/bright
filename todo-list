@@ -3,6 +3,7 @@ images:
 
 css:
   - section's separations with row of triangles
+  - draw the images (?)
 
 js:
   - transition of sections
