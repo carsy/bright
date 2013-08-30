@@ -84,66 +84,39 @@ a {
   font-family: Akkurat;
   color: #fff; }
 
-.section-topic {
+.section-topic div {
+  background-color: #FFC0ff;
   width: 100%;
+  height: 100%;
   margin: auto;
   display: inline-block; }
 
-header.section-header {
-  max-width: 800px;
+header.header-nav {
+  width: 800px;
   margin: auto;
-  height: 30px;
-  width: 760px;
-  padding: 25px 20px; }
+  display: block; }
+  header.header-nav .span-home {
+    float: left;
+    display: inline-block;
+    padding: 30px 10px;
+    height: 100%;
+    min-height: 100%;
+    font-size: 28px;
+    font-weight: bold; }
+  header.header-nav nav > span {
+    float: right;
+    display: inline-block;
+    padding: 30px 20px;
+    height: 100%;
+    min-height: 100%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px; }
 
 section.section-content {
-  max-width: 800px;
-  margin: auto; }
-
-section#home .section-header {
-  /* the background with two colors */
-  background: #404040;
-  background: -moz-linear-gradient(top, #404040 0%, #404040 50%, #333333 51%, #333333 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(50%, #404040), color-stop(51%, #333333), color-stop(100%, #333333));
-  background: -webkit-linear-gradient(top, #404040 0%, #404040 50%, #333333 51%, #333333 100%);
-  background: -o-linear-gradient(top, #404040 0%, #404040 50%, #333333 51%, #333333 100%);
-  background: -ms-linear-gradient(top, #404040 0%, #404040 50%, #333333 51%, #333333 100%);
-  background: linear-gradient(to bottom, #404040 0%, #404040 50%, #333333 51%, #333333 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#404040', endColorstr='#333333', GradientType=0 ); }
-  section#home .section-header .header-logo {
-    float: left;
-    font-size: 24px; }
-    section#home .section-header .header-logo a {
-      margin: 0;
-      padding: 0; }
-  section#home .section-header .header-nav {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    height: 100%;
-    padding-top: 6px;
-    vertical-align: middle; }
-    section#home .section-header .header-nav span {
-      float: right;
-      display: inline-block;
-      vertical-align: middle; }
-section#home .section-content img#front-cover {
-  max-width: 100%; }
-
-section#what .section-header {
-  /* the background with two colors */
-  background: #ffa600;
-  background: -moz-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffa600), color-stop(50%, #ffa600), color-stop(51%, #ffb600), color-stop(100%, #ffb600));
-  background: -webkit-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
-  background: -o-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
-  background: -ms-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
-  background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 51%, #ffb600 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa600', endColorstr='#ffb600', GradientType=0 ); }
-section#what .section-content {
-  min-height: 400px;
-  background: #ffb600; }
+  width: 800px;
+  margin: auto;
+  background-color: light-grey; }
 
 /* ==========================================================================
    Helper classes
