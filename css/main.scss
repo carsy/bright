@@ -130,7 +130,6 @@ $orange2: #ffb600;
 	background: -ms-linear-gradient(top, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
 	background: linear-gradient(to bottom, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2, GradientType=0 );
-
 }
 
 /*** For every section topic ***/
@@ -140,6 +139,7 @@ $orange2: #ffb600;
 	margin: auto;
 
 	display: inline-block;
+
 }
 
 header.section-header {
@@ -157,10 +157,19 @@ section.section-content {
 
 /* ### HOME ### */
 section#home {
-	.section-header {
+	width: 100%;
 
+	.dummy-background-header {
 		/* the background with two colors */
 		@include two-color-div($gray1, $gray2);
+
+		position: fixed;
+		width: 100%;
+
+	}
+
+	.section-header {
+		margin: auto;
 
 		.header-logo {
 			float: left;
@@ -198,6 +207,7 @@ section#home {
 	.section-content {
 		img#front-cover {
 			max-width: 100%;
+			margin-top: 80px;
 		}
 	}
 }
@@ -205,18 +215,22 @@ section#home {
 
 /* ### WHAT ### */
 section#what {
-	.section-header {
+	.dummy-background-header {
 
 		/* the background with two colors */
 		@include two-color-div($orange1, $orange2);
 	}
 
+
+	.dummy-background-content {
+		/*background-color: $orange2;*/
+
+		width: 100%;
+	}
+
 	.section-content {
 
-		height: 100%;
-
-		/*  */
-
+		/* TITLE */
 		.content-title {
 			@include two-color-div($orange2, #fff);
 
@@ -273,18 +287,29 @@ section#what {
 		}
 
 		.content-list {
-			min-height: 600px; /* TO REMOVE */
 			background: #4c4c4c;
+
+			padding: 90px 40px 40px 50px;
 
 			-webkit-border-radius: 100px 0px 0px 0px;
 			-moz-border-radius: 100px 0px 0px 0px;
 			border-radius: 100px 0px 0px 0px;
 
 			img {
+				width: auto;
+				max-height: 150px;
+			}
+			h2, p { color: white; }
+
+			h2 {
+				font-weight: bold;
+				font-size: 95%;
+				margin: 30px 50% 0px 0px;
 
 			}
-			h1, p { color: white; }
-
+			p {
+				font-size: 14px;
+			}
 		}
 
 	}
@@ -293,6 +318,9 @@ section#what {
 
 
 
+/* ==========================================================================
+   End of Author's custom styles
+   ========================================================================== */
 
 
 

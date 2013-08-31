@@ -105,39 +105,46 @@ section.section-content {
 
 /*** Individual styles for each section topic ***/
 /* ### HOME ### */
-section#home .section-header {
-  /* the background with two colors */
-  background: #404040;
-  background: -moz-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(50%, #404040), color-stop(50%, #333333), color-stop(100%, #333333));
-  background: -webkit-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-  background: -o-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-  background: -ms-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-  background: linear-gradient(to bottom, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#home .section-header .header-logo {
-    float: left;
-    font-size: 24px; }
-    section#home .section-header .header-logo a {
-      margin: 0;
-      padding: 0; }
-  section#home .section-header .header-nav {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    height: 100%;
-    padding-top: 6px;
-    vertical-align: middle; }
-    section#home .section-header .header-nav span {
-      float: right;
+section#home {
+  width: 100%; }
+  section#home .dummy-background-header {
+    /* the background with two colors */
+    background: #404040;
+    background: -moz-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(50%, #404040), color-stop(50%, #333333), color-stop(100%, #333333));
+    background: -webkit-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
+    background: -o-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
+    background: -ms-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
+    background: linear-gradient(to bottom, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
+    position: fixed;
+    width: 100%; }
+  section#home .section-header {
+    margin: auto; }
+    section#home .section-header .header-logo {
+      float: left;
+      font-size: 24px; }
+      section#home .section-header .header-logo a {
+        margin: 0;
+        padding: 0; }
+    section#home .section-header .header-nav {
       display: inline-block;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      height: 100%;
+      padding-top: 6px;
       vertical-align: middle; }
-section#home .section-content img#front-cover {
-  max-width: 100%; }
+      section#home .section-header .header-nav span {
+        float: right;
+        display: inline-block;
+        vertical-align: middle; }
+  section#home .section-content img#front-cover {
+    max-width: 100%;
+    margin-top: 80px; }
 
 /* ### WHAT ### */
-section#what .section-header {
+section#what .dummy-background-header {
   /* the background with two colors */
   background: #ffa600;
   background: -moz-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
@@ -147,9 +154,11 @@ section#what .section-header {
   background: -ms-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
   background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
+section#what .dummy-background-content {
+  /*background-color: $orange2;*/
+  width: 100%; }
 section#what .section-content {
-  height: 100%;
-  /*  */ }
+  /* TITLE */ }
   section#what .section-content .content-title {
     background: #ffb600;
     background: -moz-linear-gradient(top, #ffb600 0%, #ffb600 50%, white 50%, white 100%);
@@ -196,15 +205,26 @@ section#what .section-content {
         height: auto;
         align: middle; }
   section#what .section-content .content-list {
-    min-height: 600px;
-    /* TO REMOVE */
     background: #4c4c4c;
+    padding: 90px 40px 40px 50px;
     -webkit-border-radius: 100px 0px 0px 0px;
     -moz-border-radius: 100px 0px 0px 0px;
     border-radius: 100px 0px 0px 0px; }
-    section#what .section-content .content-list h1, section#what .section-content .content-list p {
+    section#what .section-content .content-list img {
+      width: auto;
+      max-height: 150px; }
+    section#what .section-content .content-list h2, section#what .section-content .content-list p {
       color: white; }
+    section#what .section-content .content-list h2 {
+      font-weight: bold;
+      font-size: 95%;
+      margin: 30px 50% 0px 0px; }
+    section#what .section-content .content-list p {
+      font-size: 14px; }
 
+/* ==========================================================================
+   End of Author's custom styles
+   ========================================================================== */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
