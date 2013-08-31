@@ -166,6 +166,11 @@ section#home {
 		position: fixed;
 		width: 100%;
 
+		.header-logo, .header-nav {
+			position: relative;
+			z-index: 10;
+		}
+
 	}
 
 	.section-header {
@@ -219,6 +224,8 @@ section#what {
 
 		/* the background with two colors */
 		@include two-color-div($orange1, $orange2);
+		position: relative;
+		z-index: 1
 	}
 
 

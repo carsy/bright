@@ -119,6 +119,9 @@ section#home {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
     position: fixed;
     width: 100%; }
+    section#home .dummy-background-header .header-logo, section#home .dummy-background-header .header-nav {
+      position: relative;
+      z-index: 10; }
   section#home .section-header {
     margin: auto; }
     section#home .section-header .header-logo {
@@ -153,7 +156,9 @@ section#what .dummy-background-header {
   background: -o-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
   background: -ms-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
   background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
+  position: relative;
+  z-index: 1; }
 section#what .dummy-background-content {
   /*background-color: $orange2;*/
   width: 100%; }
