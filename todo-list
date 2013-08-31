@@ -2,8 +2,14 @@ images:
   - convert front cover to jpeg
 
 css:
+  - [section] "what" title - h1 and p overflows
   - section's separations with row of triangles
+  - continuation of background colors left and right of the screen
   - draw the images (?)
 
 js:
   - transition of sections
+
+responsive design:
+  - tablets and phones i guess
+  - printable formats?

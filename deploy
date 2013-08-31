@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git push
+
+# connection to feup's vpn
+nmcli con up id VPN-FEUP
+
+scp -rp . ei10133@gnomo.fe.up.pt:public_html/bright/
+
+# closing connection
+nmcli con down id VPN-FEUP

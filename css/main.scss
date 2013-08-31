@@ -215,42 +215,76 @@ section#what {
 
 		height: 100%;
 
-		div.grid-parent {
+		/*  */
+
+		.content-title {
 			@include two-color-div($orange2, #fff);
+
+			div.content-left {
+				background-color: white;
+				padding: 80px 60px 0px 50px;
+				max-height: 100%;
+				overflow: hidden;
+
+				-webkit-border-radius: 0px 100px 0px 0px;
+				-moz-border-radius: 0px 100px 0px 0px;
+				border-radius: 0px 100px 0px 0px;
+
+				h1 {
+					font-size: 56px;
+					width: 80%;
+					line-height: 54px;
+					color: $orange1;
+					margin: 0;
+				}
+				hr {
+					height: 3px;
+					background-color: $orange2;
+					border: 0;
+					width: 55%;
+					margin: 20px 0px;
+				}
+				p { 
+					font-size: 14px;
+					color: #4c4c4c;
+					padding-right: 80px;
+				}
+
+			}
+
+			div.content-right {
+				background-color: #ffb600;
+				
+				max-width: inherit;
+				height: inherit;
+				padding: 50px 50px 50px 80px;
+
+				-webkit-border-radius: 0px 0px 0px 100px;
+				-moz-border-radius: 0px 0px 0px 100px;
+				border-radius: 0px 0px 0px 100px;
+
+				img {
+					max-width: 100%;
+					height: auto;
+
+					align: middle;
+				}
+			}
 		}
 
-		div.content-left {
-			background-color: white;
-			padding: 30px 80px 0px 30px;
-			max-height: 100%;
+		.content-list {
+			min-height: 600px; /* TO REMOVE */
+			background: #4c4c4c;
 
-			-webkit-border-radius: 0px 100px 0px 0px;
-			-moz-border-radius: 0px 100px 0px 0px;
-			border-radius: 0px 100px 0px 0px;
-
-			h1 { font-size: 38px; width: 80%; line-height: 38px; color: $orange2; }
-			hr { color: $orange2; }
-			p { font-size: 14px; width: 90%; }
-
-		}
-
-		div.content-right {
-			background-color: #ffb600;
-			
-			max-width: inherit;
-			height: inherit;
-			padding: 50px 50px 50px 80px;
-
-			-webkit-border-radius: 0px 0px 0px 100px;
-			-moz-border-radius: 0px 0px 0px 100px;
-			border-radius: 0px 0px 0px 100px;
+			-webkit-border-radius: 100px 0px 0px 0px;
+			-moz-border-radius: 100px 0px 0px 0px;
+			border-radius: 100px 0px 0px 0px;
 
 			img {
-				max-width: 100%;
-				height: auto;
 
-				align: middle;
 			}
+			h1, p { color: white; }
+
 		}
 
 	}
