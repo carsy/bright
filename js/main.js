@@ -14,14 +14,15 @@ $(document).ready(function() {
 	var le_header = $('#le_header');
 
 	var marker = $('#what_header').offset().top;
-	var originalBG = le_header.css('background');
+	var originalBG = le_header.css('background-image');
 
 	$(document).scroll(function() {
+
 		if( $(this).scrollTop() > marker ) {
-			le_header.css("background", $('#what_header').css("background"));
+			le_header.css("background-image", $('#what_header').css("background-image"));
 		}
 		else if( $(this).scrollTop() < marker ) {
-			le_header.css("background", originalBG);
+			le_header.css("background-image", originalBG);
 		}
 	});
 });
