@@ -135,10 +135,10 @@ $orange2: #ffb600;
 /*** For every section topic ***/
 
 .section-topic {
-	width: 100%;
-	margin: auto;
+	/*width: 100%;
+	margin: auto;*/
 
-	display: inline-block;
+	/*display: inline-block;*/
 
 }
 
@@ -165,6 +165,7 @@ section#home {
 
 		position: fixed;
 		width: 100%;
+		z-index: 2;
 
 		.header-logo, .header-nav {
 			position: relative;
@@ -217,7 +218,6 @@ section#home {
 	}
 }
 
-
 /* ### WHAT ### */
 section#what {
 	.dummy-background-header {
@@ -230,26 +230,52 @@ section#what {
 
 
 	.dummy-background-content {
-		/*background-color: $orange2;*/
-
+		position: absolute;
+		height: 100%;
 		width: 100%;
+		left: 0;
+		z-index: -1;
 	}
 
 	.section-content {
+		z-index: 2;
 
-		/* TITLE */
 		.content-title {
-			@include two-color-div($orange2, #fff);
+			background-color: $orange2;
+
+			.dummy-background-content-right {
+			    position: absolute;
+			    height: 440px;
+			    width: 512px;
+			    left: 50%;
+			    z-index: 0;
+			    background-color: white;
+			}
+
+			.dummy-background-content {
+			    position: absolute;
+			    left: 75%;
+			    height: 440px;
+			    width: 356px;
+			    background-color: #ffb600;
+			}
+
 
 			div.content-left {
 				background-color: white;
-				padding: 80px 60px 0px 50px;
-				max-height: 100%;
-				overflow: hidden;
+				padding: 80px 60px 40px 50px;
+				height: 440px;
+				max-height: 440px;
 
 				-webkit-border-radius: 0px 100px 0px 0px;
 				-moz-border-radius: 0px 100px 0px 0px;
 				border-radius: 0px 100px 0px 0px;
+
+				.dummy-background-content {
+					background-color: $orange2;
+					height: 440px;
+					width: 512px;
+				}
 
 				h1 {
 					font-size: 56px;
@@ -269,6 +295,7 @@ section#what {
 					font-size: 14px;
 					color: #4c4c4c;
 					padding-right: 80px;
+					overflow: hidden;
 				}
 
 			}
@@ -276,13 +303,21 @@ section#what {
 			div.content-right {
 				background-color: #ffb600;
 				
+				position: relative;
 				max-width: inherit;
 				height: inherit;
 				padding: 50px 50px 50px 80px;
+				z-index: 1;
 
 				-webkit-border-radius: 0px 0px 0px 100px;
 				-moz-border-radius: 0px 0px 0px 100px;
 				border-radius: 0px 0px 0px 100px;
+
+				.dummy-background-content {
+					background-color: white;
+					height: 440px;
+					width: 512px;
+				}
 
 				img {
 					max-width: 100%;
@@ -294,13 +329,22 @@ section#what {
 		}
 
 		.content-list {
-			background: #4c4c4c;
 
-			padding: 90px 40px 40px 50px;
+			.dummy-background-content {
+				background-color: #4c4c4c;
+
+				border-radius: 100px 0px 0px 0px;
+			}
+
+			padding: 0px 40px 40px 50px;
 
 			-webkit-border-radius: 100px 0px 0px 0px;
 			-moz-border-radius: 100px 0px 0px 0px;
 			border-radius: 100px 0px 0px 0px;
+
+			.list-item {
+				padding-top: 90px;
+			}
 
 			img {
 				width: auto;
@@ -322,6 +366,35 @@ section#what {
 	}
 
 }
+
+/* ### WHO ### */
+section#who {
+	.dummy-background-header {
+		@include two-color-div(#66ccc6, #66ccc6);
+	}
+
+	.dummy-background-content {
+		background: #3abebe;
+		width: 100%;
+	}
+
+	.section-content {
+
+		.content-list {
+			padding: 50px 50px 0px 50px;
+
+			img {
+				display: block;
+				width: auto;
+				max-height: 200px;
+				
+				margin: auto;
+			}
+		}
+
+	}
+}
+
 
 
 
