@@ -287,7 +287,7 @@ section#what {
 
 				h1 {
 					/*font-size: 56px;*/
-					width: 80%;
+					/*width: 80%;*/
 					line-height: 1em;
 					color: $orange1;
 					margin: 0;
@@ -420,7 +420,37 @@ section#news {
 	position: relative;
 
 	.dummy-background-header {
-		background-color: $green1;
+		@include two-color-div($green1, $green1);
+	}
+
+	.section-content {
+		height: 600px; /* TO REMOVE */
+
+
+		.content-title {
+			padding: 35px 30px 50px 30px;
+
+			 span {
+			 	display: block;
+			 	font-size: 14px;
+			 }
+
+			.item-header {
+				color: $green1;
+				font-weight: bolder;
+				font-size: 18px;
+
+			}
+
+			.item-date {
+				font-weight: bold;
+			}
+
+			.item-source {
+				margin-bottom: 5px;
+			}
+		}
+
 	}
 }
 
