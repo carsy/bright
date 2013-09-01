@@ -17,16 +17,6 @@ $(document).ready(function() {
 		}
 	});
 
-	// for( var key in headers ) {
-	// 	headers[key].link.click(function() {
-	// 		le_header.css('background', headers[key].background);
-	// 	});
-	// }
-
-	headers['who_header'].link.click(function() {
-		le_header.css('background', headers['who_header'].background);
-	});
-
 	window.onresize = function() {
 		var dummy_right = $('section#what .dummy-background-content-right');
 		dummy_right.css('width', $('section#what div.content-right').outerWidth());
