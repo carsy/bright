@@ -356,8 +356,10 @@ section#what {
 			}
 
 			img {
-				width: 60%;
+				width: auto;
 				max-height: 150px;
+				height: 110px;
+				overflow: visible;
 			}
 			h2, p { color: white; }
 

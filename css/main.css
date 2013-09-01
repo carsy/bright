@@ -242,8 +242,10 @@ section#what .section-content {
     section#what .section-content .content-list .list-item {
       padding-top: 90px; }
     section#what .section-content .content-list img {
-      width: 60%;
-      max-height: 150px; }
+      width: auto;
+      max-height: 150px;
+      height: 110px;
+      overflow: visible; }
     section#what .section-content .content-list h2, section#what .section-content .content-list p {
       color: white; }
     section#what .section-content .content-list h2 {
