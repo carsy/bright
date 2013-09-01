@@ -6,6 +6,7 @@ css:
   - section's separations with row of triangles
   - continuation of background colors left and right of the screen
   - draw the images (?)
+  - refactor 20px left and right padding on content and headers
 
 js:
   - transition of sections

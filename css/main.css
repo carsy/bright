@@ -232,7 +232,7 @@ section#what .section-content {
         height: auto;
         align: middle; }
   section#what .section-content .content-list {
-    padding: 0px 40px 40px 50px;
+    padding: 0px 20px 40px 20px;
     -webkit-border-radius: 100px 0px 0px 0px;
     -moz-border-radius: 100px 0px 0px 0px;
     border-radius: 100px 0px 0px 0px; }
@@ -273,7 +273,7 @@ section#who {
     z-index: -1;
     background: #3abebe; }
   section#who .section-content .content-list {
-    padding: 50px 50px 0px 50px; }
+    padding: 50px 20px 0px 20px; }
     section#who .section-content .content-list img {
       display: block;
       width: auto;
@@ -300,16 +300,18 @@ section#news {
     height: 600px;
     /* TO REMOVE */ }
     section#news .section-content .content-title {
-      padding: 35px 30px 50px 30px; }
+      padding: 35px 20px 50px 20px; }
       section#news .section-content .content-title span {
         display: block;
         font-size: 14px; }
       section#news .section-content .content-title .item-header {
         color: #40bb6a;
         font-weight: bolder;
-        font-size: 18px; }
+        font-size: 18px;
+        line-height: 18px; }
       section#news .section-content .content-title .item-date {
-        font-weight: bold; }
+        font-weight: bold;
+        margin-top: 5px; }
       section#news .section-content .content-title .item-source {
         margin-bottom: 5px; }
 

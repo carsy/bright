@@ -338,7 +338,7 @@ section#what {
 
 		.content-list {
 
-			padding: 0px 40px 40px 50px;
+			padding: 0px 20px 40px 20px;
 
 			-webkit-border-radius: 100px 0px 0px 0px;
 			-moz-border-radius: 100px 0px 0px 0px;
@@ -395,7 +395,7 @@ section#who {
 	.section-content {
 
 		.content-list {
-			padding: 50px 50px 0px 50px;
+			padding: 50px 20px 0px 20px;
 
 			img {
 				display: block;
@@ -428,7 +428,7 @@ section#news {
 
 
 		.content-title {
-			padding: 35px 30px 50px 30px;
+			padding: 35px 20px 50px 20px;
 
 			 span {
 			 	display: block;
@@ -439,11 +439,12 @@ section#news {
 				color: $green1;
 				font-weight: bolder;
 				font-size: 18px;
-
+				line-height: 18px;
 			}
 
 			.item-date {
 				font-weight: bold;
+				margin-top: 5px;
 			}
 
 			.item-source {
