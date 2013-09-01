@@ -16,7 +16,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-
+	
 	window.onresize = function() {
 		var dummy_right = $('section#what .dummy-background-content-right');
 		dummy_right.css('width', $('section#what div.content-right').outerWidth());

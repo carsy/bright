@@ -358,7 +358,11 @@ section#what {
 			img {
 				width: auto;
 				max-height: 150px;
+<<<<<<< HEAD
 				height: 110px;
+=======
+				height: 110px;  /* add span with 100px and make this auto */
+>>>>>>> gh-pages
 				overflow: visible;
 			}
 			h2, p { color: white; }

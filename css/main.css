@@ -1,475 +1,70 @@
 /*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222; }
+Syntax error: Invalid CSS after "...-height: 150px;": expected "}", was "<<<<<<< HEAD"
+        on line 361 of main.scss
 
-body {
-  font-size: 1em;
-  line-height: 1.4; }
+356: 			}
+357: 
+358: 			img {
+359: 				width: auto;
+360: 				max-height: 150px;
+361: <<<<<<< HEAD
+362: 				height: 110px;
+363: =======
+364: 				height: 110px;  /* add span with 100px and make this auto *\/
+365: >>>>>>> gh-pages
+366: 				overflow: visible;
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-/*
- * A better looking default horizontal rule
- */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-img {
-  vertical-align: middle; }
-
-/*
- * Remove default fieldset styles.
- */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-textarea {
-  resize: vertical; }
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-@font-face {
-  font-family: Akkurat;
-  src: url("../fonts/akkurat/Akkurat.ttf"); }
-
-a {
-  text-decoration: none;
-  font-family: Akkurat;
-  color: #fff; }
-
-/* dimensions */
-/* colors */
-/*** For every section topic ***/
-.section-topic {
-  /*width: 100%;
-  margin: auto;*/
-  /*display: inline-block;*/ }
-
-header.section-header {
-  max-width: 800px;
-  margin: auto;
-  height: 30px;
-  width: 760px;
-  padding: 25px 20px; }
-
-section.section-content {
-  max-width: 800px;
-  margin: auto; }
-
-/*** Individual styles for each section topic ***/
-/* ### HOME ### */
-section#home {
-  width: 100%; }
-  section#home .dummy-background-header {
-    /* the background with two colors */
-    background: #404040;
-    background: -moz-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(50%, #404040), color-stop(50%, #333333), color-stop(100%, #333333));
-    background: -webkit-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -o-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -ms-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: linear-gradient(to bottom, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
-    position: fixed;
-    width: 100%;
-    z-index: 2; }
-    section#home .dummy-background-header .header-logo, section#home .dummy-background-header .header-nav {
-      position: relative;
-      z-index: 10; }
-  section#home .section-header {
-    margin: auto; }
-    section#home .section-header .header-logo {
-      float: left;
-      font-size: 24px; }
-      section#home .section-header .header-logo a {
-        margin: 0;
-        padding: 0; }
-    section#home .section-header .header-nav {
-      display: inline-block;
-      font-weight: bold;
-      font-size: 14px;
-      text-align: center;
-      height: 100%;
-      padding-top: 6px;
-      vertical-align: middle; }
-      section#home .section-header .header-nav span {
-        float: right;
-        display: inline-block;
-        vertical-align: middle; }
-  section#home .section-content img#front-cover {
-    max-width: 100%;
-    margin-top: 80px; }
-
-/* ### WHAT ### */
-section#what .dummy-background-header {
-  /* the background with two colors */
-  background: #ffa600;
-  background: -moz-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffa600), color-stop(50%, #ffa600), color-stop(50%, #ffb600), color-stop(100%, #ffb600));
-  background: -webkit-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -o-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -ms-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
-  position: relative;
-  z-index: 1; }
-section#what .dummy-background-content {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  z-index: -1; }
-section#what .section-content {
-  z-index: 2; }
-  section#what .section-content .content-title {
-    background-color: #ffb600; }
-    section#what .section-content .content-title .dummy-background-content-right {
-      position: absolute;
-      height: 340px;
-      width: 100%;
-      left: 50%;
-      z-index: 0;
-      background-color: white; }
-    section#what .section-content .content-title .dummy-background-content {
-      position: absolute;
-      left: 75%;
-      height: 340px;
-      background-color: #ffb600;
-      z-index: 1; }
-    section#what .section-content .content-title div.content-left {
-      background-color: white;
-      padding: 50px 60px 40px 50px;
-      max-height: 340px;
-      height: 340px;
-      -webkit-border-radius: 0px 100px 0px 0px;
-      -moz-border-radius: 0px 100px 0px 0px;
-      border-radius: 0px 100px 0px 0px;
-      overflow: hidden; }
-      section#what .section-content .content-title div.content-left .dummy-background-content {
-        background-color: #ffb600;
-        height: 440px;
-        width: 512px; }
-      section#what .section-content .content-title div.content-left h1 {
-        /*font-size: 56px;*/
-        /*width: 80%;*/
-        line-height: 1em;
-        color: #ffa600;
-        margin: 0;
-        overflow: hidden; }
-      section#what .section-content .content-title div.content-left hr {
-        height: 3px;
-        background-color: #ffb600;
-        border: 0;
-        width: 55%;
-        margin: 20px 0px; }
-      section#what .section-content .content-title div.content-left p {
-        font-size: 12px;
-        color: #4c4c4c;
-        overflow: hidden; }
-    section#what .section-content .content-title div.content-right {
-      background-color: #ffb600;
-      position: relative;
-      max-width: inherit;
-      height: inherit;
-      padding: 50px 50px 50px 80px;
-      z-index: 1;
-      -webkit-border-radius: 0px 0px 0px 100px;
-      -moz-border-radius: 0px 0px 0px 100px;
-      border-radius: 0px 0px 0px 100px; }
-      section#what .section-content .content-title div.content-right .dummy-background-content {
-        background-color: white;
-        height: 440px;
-        width: 512px; }
-      section#what .section-content .content-title div.content-right img {
-        max-width: 100%;
-        height: auto;
-        align: middle; }
-  section#what .section-content .content-list {
-    padding: 0px 20px 40px 20px;
-    -webkit-border-radius: 100px 0px 0px 0px;
-    -moz-border-radius: 100px 0px 0px 0px;
-    border-radius: 100px 0px 0px 0px; }
-    section#what .section-content .content-list .dummy-background-content {
-      background-color: #4c4c4c;
-      border-radius: 100px 0px 0px 0px; }
-    section#what .section-content .content-list .list-item {
-      padding-top: 90px; }
-    section#what .section-content .content-list img {
-      width: auto;
-      max-height: 150px;
-      height: 110px;
-      overflow: visible; }
-    section#what .section-content .content-list h2, section#what .section-content .content-list p {
-      color: white; }
-    section#what .section-content .content-list h2 {
-      font-weight: bold;
-      font-size: 95%;
-      margin: 30px 50% 0px 0px; }
-    section#what .section-content .content-list p {
-      font-size: 12px; }
-
-/* ### WHO ### */
-section#who {
-  position: relative; }
-  section#who .dummy-background-header {
-    background: #66ccc6;
-    background: -moz-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #66ccc6), color-stop(50%, #66ccc6), color-stop(50%, #66ccc6), color-stop(100%, #66ccc6));
-    background: -webkit-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -o-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -ms-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: linear-gradient(to bottom, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#who .dummy-background-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1;
-    background: #3abebe; }
-  section#who .section-content .content-list {
-    padding: 50px 20px 0px 20px; }
-    section#who .section-content .content-list img {
-      display: block;
-      width: auto;
-      max-height: 200px;
-      margin: auto; }
-  section#who .section-content .content-title {
-    height: 400px;
-    /* TO REMOVE */ }
-    section#who .section-content .content-title .dummy-background-content {
-      background-color: white; }
-
-section#news {
-  position: relative; }
-  section#news .dummy-background-header {
-    background: #40bb6a;
-    background: -moz-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #40bb6a), color-stop(50%, #40bb6a), color-stop(50%, #40bb6a), color-stop(100%, #40bb6a));
-    background: -webkit-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -o-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -ms-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: linear-gradient(to bottom, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#news .section-content {
-    height: 600px;
-    /* TO REMOVE */ }
-    section#news .section-content .content-title {
-      padding: 35px 20px 50px 20px; }
-      section#news .section-content .content-title span {
-        display: block;
-        font-size: 14px; }
-      section#news .section-content .content-title .item-header {
-        color: #40bb6a;
-        font-weight: bolder;
-        font-size: 18px;
-        line-height: 18px; }
-      section#news .section-content .content-title .item-date {
-        font-weight: bold;
-        margin-top: 5px; }
-      section#news .section-content .content-title .item-source {
-        margin-bottom: 5px; }
-
-/* ==========================================================================
-   End of Author's custom styles
-   ========================================================================== */
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Image replacement
- */
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: -9999px; }
-
-.ir:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%; }
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-.hidden {
-  display: none !important;
-  visibility: hidden; }
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto; }
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-.invisible {
-  visibility: hidden; }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1; }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  a,
-  a:visited {
-    text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-
-  tr,
-  img {
-    page-break-inside: avoid; }
-
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-
-  h2,
-  h3 {
-    page-break-after: avoid; } }
+Backtrace:
+main.scss:361
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1147:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1083:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1078:in `tok!'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:535:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:528:in `ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `rethrow'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:553:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:545:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:534:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:528:in `ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `rethrow'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:553:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:545:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:534:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:528:in `ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:590:in `block in declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:1121:in `rethrow'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:591:in `declaration_or_ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:553:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:545:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:534:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:528:in `ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:552:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:545:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:82:in `stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/scss/parser.rb:27:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:342:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/var/lib/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...-height: 150px;\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 361 of main.scss\A \A 356: 			}\A 357: \A 358: 			img {\A 359: 				width: auto;\A 360: 				max-height: 150px;\A 361: <<<<<<< HEAD\A 362: 				height: 110px;\A 363: =======\A 364: 				height: 110px;  /* add span with 100px and make this auto */\A 365: >>>>>>> gh-pages\A 366: 				overflow: visible;"; }
