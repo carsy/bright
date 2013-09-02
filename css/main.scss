@@ -121,6 +121,8 @@ $blue2: #3abebe;
 $green1: #40bb6a;
 $green2: #78ce7e;
 
+$gray3: #7b7979;
+
 
 @mixin content-center {
 	max-width: $max-width;
@@ -403,8 +405,13 @@ section#who {
 				display: block;
 				width: auto;
 				max-height: 200px;
-				
 				margin: auto;
+
+				&:hover {
+					-webkit-filter: drop-shadow(0px 0px 35px white);
+					-moz-filter: drop-shadow(0px 0px 35px white); /* #FIXME */
+					filter: drop-shadow(0px 0px 35px white);
+				}
 			}
 		}
 		
@@ -434,7 +441,7 @@ section#news {
 
 			 span {
 			 	display: block;
-			 	font-size: 14px;
+			 	font-size: 12px;
 			 }
 
 			.item-header {
@@ -457,6 +464,70 @@ section#news {
 	}
 }
 
+section#partners {
+	position: relative;
+
+	.dummy-background-header {
+		@include two-color-div($gray3, $gray3);
+	}
+
+	.dummy-background-content {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		z-index: -1;
+		background: $gray3;
+	}
+
+	.section-content {
+
+		.content-list {
+			padding: 20px 20px 50px 20px;
+			
+			.list-item {
+				color: white;
+
+				span {
+					display: block;
+				}
+
+				.item-img {
+					height: 160px;
+					width: 160px;
+
+					background-color: white;
+					-webkit-border-radius: 100px;
+					-moz-border-radius: 100px;
+					border-radius: 100px;
+
+					display: table-cell;
+				    text-align: center;
+				    vertical-align: middle;
+				}
+
+				.item-header {
+					margin-top: 20px;
+					margin-bottom: 5px;
+
+					text-transform: uppercase;
+					font-weight: bolder;
+				}
+
+				.item-content {
+					margin-bottom: 10px;
+
+					font-size: 12px;
+				}
+
+				.item-link {
+					font-size: 18px;
+				}
+
+			}
+		}
+	}
+}
 
 
 /* ==========================================================================

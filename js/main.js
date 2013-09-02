@@ -5,7 +5,8 @@ $(document).ready(function() {
 		'le_header': { marker: le_header.offset().top, background: le_header.css('background-image'), elem: le_header, link: $('a[href=#home]') },
 		'what_header': { marker: $('#what_header').offset().top, background: $('#what_header').css('background-image'), elem: $('what_header'), link: $('a[href=#what]') },
 		'who_header': { marker: $('#who_header').offset().top, background: $('#who_header').css('background-image'), elem: $('#who_header'), link: $('a[href=#who]') },
-		'news_header': { marker: $('#news_header').offset().top, background: $('#news_header').css('background-image'), elem: $('#news_header'), link: $('a[href=#news]') }
+		'news_header': { marker: $('#news_header').offset().top, background: $('#news_header').css('background-image'), elem: $('#news_header'), link: $('a[href=#news]') },
+		'partners_header': { marker: $('#partners_header').offset().top, background: $('#partners_header').css('background-image'), elem: $('#partners_header'), link: $('a[href=#partners]') }
 	}
 
 	$(document).scroll(function() {

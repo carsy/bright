@@ -1,19 +1,41 @@
-images:
-  - convert front cover to jpeg
+### Sections ###
 
-css:
-  [b] [section] "what" title - h1 and p overflows
-  - section's separations with row of triangles
-  - continuation of background colors left and right of the screen
-  - draw the images (?)
-  - refactor 20px left and right padding on content and headers
+ "what we do"
+   [-] Project description and pictures on expand
 
-js:
-  - transition of sections
+ "who we are"
+   [-] description of each team on click (or hover?)
 
-responsive-design:
-  - tablets and phones i guess
-  - printable formats?
+ "news"
+   [-] detailed news on expand
+   [-] link to original source (?)
 
-client-integration:
-  - report tool (simple button ?)
+ "partners"
+   [-] ...
+
+ "contacts"
+   [-] ...
+
+
+### Techs  ###
+
+ img:
+   [-] convert front cover to jpeg
+
+ css:
+   [b] [section] "what" title - h1 and p overflows
+   [-] section's separations with row of triangles
+   [b] firefox bug: continuation of background colors left and right of the screen
+   [-] draw the images (?)
+   [-] refactor 20px left and right padding on content and headers
+   [-] highlight/underline header's links
+
+ js:
+   [-] transition of sections
+
+ responsive-design:
+   [-] tablets and phones i guess
+   [-] printable formats?
+
+ client-integration:
+   [-] report tool (simple button ?)
