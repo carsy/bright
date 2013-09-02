@@ -150,14 +150,14 @@ $gray3: #7b7979;
 
 }
 
-header.section-header {
+.section-header {
 	@include content-center;
 	height: 30px;
 	width: $max-width - $pad-correction * 2;
 	padding: 25px $pad-correction;
 }
 
-section.section-content {
+.section-content {
 	@include content-center;
 }
 
@@ -527,6 +527,79 @@ section#partners {
 			}
 		}
 	}
+}
+
+footer {
+	background-color: #333333;
+
+	position: relative;
+	/*height: 150px;  TO REMOVE 
+*/
+
+	text-transform: uppercase;
+	font-size: 12px;
+
+	.dummy-background {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		z-index: -1;
+		background: #333333;
+	}
+
+	.footer-content {
+		@include content-center;
+
+		.content-list {
+			padding: 50px 20px 50px 20px;
+
+			#site_map {
+				display: inline-block;
+
+
+				span {
+					a {
+						color: #d0d0d0;
+					}
+					display: block;
+				}
+
+				span.header a {
+					color: white;
+				}
+			}
+			.langs {
+				display: inline-block;
+				color: #d0d0d0;
+
+				span {
+					display: block;
+				}
+			}
+
+			.three-dots-0o {
+				div {
+					height: 30px;
+					width: 30px;
+					margin-right: 5px;
+					display: inline-block;
+					float: right;
+					
+					-webkit-border-radius: 30px;
+					-moz-border-radius: 30px;
+					border-radius: 30px;
+
+					background-color: white;
+				}
+
+			}
+		}
+	}
+
+	
+
+
 }
 
 

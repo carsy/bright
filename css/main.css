@@ -92,14 +92,14 @@ a {
   margin: auto;*/
   /*display: inline-block;*/ }
 
-header.section-header {
+.section-header {
   max-width: 800px;
   margin: auto;
   height: 30px;
   width: 760px;
   padding: 25px 20px; }
 
-section.section-content {
+.section-content {
   max-width: 800px;
   margin: auto; }
 
@@ -367,6 +367,49 @@ section#partners {
         font-size: 12px; }
       section#partners .section-content .content-list .list-item .item-link {
         font-size: 18px; }
+
+footer {
+  background-color: #333333;
+  position: relative;
+  	/*height: 150px;  TO REMOVE 
+  */
+  text-transform: uppercase;
+  font-size: 12px; }
+  footer .dummy-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    background: #333333; }
+  footer .footer-content {
+    max-width: 800px;
+    margin: auto; }
+    footer .footer-content .content-list {
+      padding: 50px 20px 50px 20px; }
+      footer .footer-content .content-list #site_map {
+        display: inline-block; }
+        footer .footer-content .content-list #site_map span {
+          display: block; }
+          footer .footer-content .content-list #site_map span a {
+            color: #d0d0d0; }
+        footer .footer-content .content-list #site_map span.header a {
+          color: white; }
+      footer .footer-content .content-list .langs {
+        display: inline-block;
+        color: #d0d0d0; }
+        footer .footer-content .content-list .langs span {
+          display: block; }
+      footer .footer-content .content-list .three-dots-0o div {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+        display: inline-block;
+        float: right;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        background-color: white; }
 
 /* ==========================================================================
    End of Author's custom styles
