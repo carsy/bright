@@ -1,40 +1,31 @@
 $(document).ready(function() {
 	var home_header = $('#home_header');
-	var what_header = $('#what_header');
-	var who_header = $('#who_header');
-	var news_header = $('#news_header');
-	var partners_header = $('#partners_header');
 
 	var headers = [
 		{
 			id: 'home_header',
 			marker: home_header.offset().top,
-			background: home_header.css('background-image'),
-			elem: home_header,
+			background: home_header.css('background-image')
 		},
 		{
 			id: 'what_header',
-			marker: what_header.offset().top,
-			background: what_header.css('background-image'),
-			elem: what_header,
+			marker: $('#what_header').offset().top,
+			background: $('#what_header').css('background-image')
 		},
 		{
 			id: 'who_header',
-			marker: who_header.offset().top,
-			background: who_header.css('background-image'),
-			elem: who_header,
+			marker: $('#who_header').offset().top,
+			background: $('#who_header').css('background-image')
 		},
 		{
 			id: 'news_header',
-			marker: news_header.offset().top, 
-			background: news_header.css('background-image'), 
-			elem: news_header, 
+			marker: $('#news_header').offset().top, 
+			background: $('#news_header').css('background-image')
 		},
 		{ 
 			id: 'partners_header',
-			marker: partners_header.offset().top, 
-			background: partners_header.css('background-image'), 
-			elem: partners_header, 
+			marker: $('#partners_header').offset().top, 
+			background: $('#partners_header').css('background-image')
 		}
 	];
 
@@ -79,4 +70,5 @@ $(document).ready(function() {
 	});
 
 	$(window).resize();
+
 });
