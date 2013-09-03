@@ -20,18 +20,18 @@
 ### Techs  ###
 
  img:
-   [-] convert front cover to jpeg
+   [x] convert front cover to jpeg
+   [-] draw the images with css (?)
 
  css:
    [b] [section] "what" title - h1 and p overflows
    [-] section's separations with row of triangles
    [b] firefox bug: continuation of background colors left and right of the screen
-   [-] draw the images (?)
    [-] refactor 20px left and right padding on content and headers
    [-] highlight/underline header's links
 
  js:
-   [-] transition of sections
+   [-] transition of sections: animations?
 
  responsive-design:
    [-] tablets and phones i guess
