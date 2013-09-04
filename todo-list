@@ -25,16 +25,16 @@
 
  css:
    [b] [section] "what" title - h1 and p overflows
-   [-] section's separations with row of triangles
-   [b] firefox bug: continuation of background colors left and right of the screen
+   [x] section's separations with row of triangles
+   [x] firefox bug: continuation of background colors left and right of the screen
    [-] refactor 20px left and right padding on content and headers
    [-] highlight/underline header's links
 
  js:
-   [-] transition of sections: animations?
+   [x] transition of sections: stop current animation if another link is clicked (i.e. another animation should start)
 
  responsive-design:
-   [-] tablets and phones i guess
+   [x] basic tablets and phones i guess
    [-] printable formats?
 
  client-integration:

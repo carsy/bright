@@ -96,31 +96,31 @@ a {
 .section-content {
   max-width: 1024px;
   margin: auto; }
-  .section-content .dummy-background-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1; }
+
+.dummy-background, .dummy-background-1, .dummy-background-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1; }
 
 /*** Section Styles ***/
 /* ### HOME ### */
 section#home {
-  width: 100%; }
-  section#home .dummy-background-header {
-    /* the background with two colors */
-    background: #404040;
-    background: -moz-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #404040), color-stop(50%, #404040), color-stop(50%, #333333), color-stop(100%, #333333));
-    background: -webkit-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -o-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: -ms-linear-gradient(top, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    background: linear-gradient(to bottom, #404040 0%, #404040 50%, #333333 50%, #333333 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
+  width: 100%;
+  margin-bottom: -6px; }
+  section#home #home_header {
     position: fixed;
     width: 100%;
     z-index: 2; }
-    section#home .dummy-background-header .header-logo, section#home .dummy-background-header .header-nav {
+    section#home #home_header .dummy-background-1 {
+      background: #404040;
+      height: 50%; }
+    section#home #home_header .dummy-background-2 {
+      background: #333333;
+      height: 50%;
+      top: 50%; }
+    section#home #home_header .header-logo, section#home #home_header .header-nav {
       position: relative;
       z-index: 10; }
   section#home .section-header {
@@ -148,121 +148,123 @@ section#home {
     margin-top: 80px; }
 
 /* ### WHAT ### */
-section#what .dummy-background-header {
-  /* the background with two colors */
-  background: #ffa600;
-  background: -moz-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffa600), color-stop(50%, #ffa600), color-stop(50%, #ffb600), color-stop(100%, #ffb600));
-  background: -webkit-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -o-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: -ms-linear-gradient(top, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  background: linear-gradient(to bottom, #ffa600 0%, #ffa600 50%, #ffb600 50%, #ffb600 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
-  position: relative;
-  z-index: 1; }
-section#what .section-content {
-  z-index: 2; }
-  section#what .section-content .dummy-background-content {
-    background: #ffffff;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #ffb600), color-stop(100%, #ffb600));
-    background: -webkit-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
-    background: -o-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
-    background: -ms-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
-    background: linear-gradient(to right, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 ); }
-  section#what .section-content .content-title {
-    background: #ffb600;
+section#what {
+  border-style: solid;
+  border-width: 0px 0px 7px;
+  border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat; }
+  section#what #what_header.dummy-separator {
+    position: relative;
+    border-style: solid;
+    border-width: 7px 0px 0px;
+    border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat; }
+    section#what #what_header.dummy-separator .dummy-background-1 {
+      height: 50%;
+      top: 0;
+      background: #ffa600; }
+    section#what #what_header.dummy-separator .dummy-background-2 {
+      height: 50%;
+      top: 50%;
+      background: #ffb600; }
+  section#what > .dummy-background-1 {
     position: relative; }
-    section#what .section-content .content-title div.content-left {
-      background: white;
-      padding: 50px 60px 40px 50px;
-      height: 100%;
-      min-height: 100%;
-      width: 50%;
+    section#what > .dummy-background-1 .dummy-background-2 {
       position: absolute;
-      -webkit-border-radius: 0px 100px 0px 0px;
-      -moz-border-radius: 0px 100px 0px 0px;
-      border-radius: 0px 100px 0px 0px;
-      overflow: hidden; }
-      section#what .section-content .content-title div.content-left h1 {
-        /*font-size: 56px;*/
-        /*width: 80%;*/
-        line-height: 1em;
-        color: #ffa600;
-        margin: 0;
-        overflow: hidden; }
-      section#what .section-content .content-title div.content-left hr {
-        height: 3px;
-        background-color: #ffb600;
-        border: 0;
-        width: 55%;
-        margin: 20px 0px; }
-      section#what .section-content .content-title div.content-left p {
-        font-size: 12px;
-        color: #4c4c4c;
-        overflow: hidden; }
-    section#what .section-content .content-title div.content-right {
-      background: white;
-      left: 50%;
-      position: relative;
-      height: inherit;
       width: 50%;
-      padding: 50px 50px 50px 80px;
-      z-index: 1; }
-      section#what .section-content .content-title div.content-right .dummy-background-content {
-        top: 0;
-        background: #ffb600;
-        -webkit-border-radius: 0px 0px 0px 100px;
-        -moz-border-radius: 0px 0px 0px 100px;
-        border-radius: 0px 0px 0px 100px; }
-      section#what .section-content .content-title div.content-right img {
-        max-width: 100%;
-        height: auto;
-        align: middle; }
-  section#what .section-content .content-list {
-    padding: 0px 20px 40px 20px;
-    -webkit-border-radius: 100px 0px 0px 0px;
-    -moz-border-radius: 100px 0px 0px 0px;
+      left: 50%;
+      background: #ffb600; }
+  section#what > .dummy-background-2 {
+    position: relative;
+    background: #4c4c4c;
     border-radius: 100px 0px 0px 0px; }
-    section#what .section-content .content-list .dummy-background-content {
-      background: #4c4c4c;
+  section#what .section-content {
+    z-index: 2; }
+    section#what .section-content .content-title {
+      background: #ffb600;
+      position: relative; }
+      section#what .section-content .content-title div.content-left {
+        background: white;
+        padding: 50px 60px 40px 50px;
+        height: 100%;
+        min-height: 100%;
+        width: 50%;
+        position: absolute;
+        -webkit-border-radius: 0px 100px 0px 0px;
+        -moz-border-radius: 0px 100px 0px 0px;
+        border-radius: 0px 100px 0px 0px;
+        overflow: hidden; }
+        section#what .section-content .content-title div.content-left h1 {
+          /*font-size: 56px;*/
+          /*width: 80%;*/
+          line-height: 1em;
+          color: #ffa600;
+          margin: 0;
+          overflow: hidden; }
+        section#what .section-content .content-title div.content-left hr {
+          height: 3px;
+          background-color: #ffb600;
+          border: 0;
+          width: 55%;
+          margin: 20px 0px; }
+        section#what .section-content .content-title div.content-left p {
+          font-size: 12px;
+          color: #4c4c4c;
+          overflow: hidden; }
+      section#what .section-content .content-title div.content-right {
+        background: white;
+        left: 50%;
+        position: relative;
+        height: inherit;
+        width: 50%;
+        padding: 50px 50px 50px 80px;
+        z-index: 1; }
+        section#what .section-content .content-title div.content-right .dummy-background {
+          top: 0;
+          background: #ffb600;
+          -webkit-border-radius: 0px 0px 0px 100px;
+          -moz-border-radius: 0px 0px 0px 100px;
+          border-radius: 0px 0px 0px 100px; }
+        section#what .section-content .content-title div.content-right img {
+          max-width: 100%;
+          height: auto;
+          align: middle; }
+    section#what .section-content .content-list {
+      padding: 0px 20px 40px 20px;
+      -webkit-border-radius: 100px 0px 0px 0px;
+      -moz-border-radius: 100px 0px 0px 0px;
       border-radius: 100px 0px 0px 0px; }
-    section#what .section-content .content-list .list-item {
-      padding-top: 90px; }
-      @media only screen and (max-width: 600px) {
-        section#what .section-content .content-list .list-item {
-          padding-top: 30px; } }
-    section#what .section-content .content-list img {
-      width: auto;
-      max-height: 150px;
-      height: 110px;
-      /* add span with 100px and make this auto */
-      overflow: visible; }
-    section#what .section-content .content-list h2, section#what .section-content .content-list p {
-      color: white; }
-    section#what .section-content .content-list h2 {
-      font-weight: bold;
-      font-size: 95%;
-      margin: 30px 50% 0px 0px; }
-    section#what .section-content .content-list p {
-      font-size: 12px; }
+      section#what .section-content .content-list .list-item {
+        padding-top: 90px; }
+        @media only screen and (max-width: 600px) {
+          section#what .section-content .content-list .list-item {
+            padding-top: 30px; } }
+      section#what .section-content .content-list img {
+        width: auto;
+        max-height: 150px;
+        height: 110px;
+        /* add span with 100px and make this auto */
+        overflow: visible; }
+      section#what .section-content .content-list h2, section#what .section-content .content-list p {
+        color: white; }
+      section#what .section-content .content-list h2 {
+        font-weight: bold;
+        font-size: 95%;
+        margin: 30px 50% 0px 0px; }
+      section#what .section-content .content-list p {
+        font-size: 12px; }
 
 /* ### WHO ### */
 section#who {
   position: relative; }
-  section#who .dummy-background-header {
-    background: #66ccc6;
-    background: -moz-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #66ccc6), color-stop(50%, #66ccc6), color-stop(50%, #66ccc6), color-stop(100%, #66ccc6));
-    background: -webkit-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -o-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: -ms-linear-gradient(top, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    background: linear-gradient(to bottom, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#who .dummy-background-content {
+  section#who #who_header {
+    position: relative; }
+    section#who #who_header .dummy-background-1, section#who #who_header .dummy-background-2 {
+      background: #66ccc6; }
+  section#who > .dummy-background-1 {
+    position: relative;
     background: #3abebe; }
+  section#who > .dummy-background-2 {
+    position: relative;
+    background: white; }
   section#who .section-content .content-list {
     padding: 50px 20px 0px 20px; }
     section#who .section-content .content-list img {
@@ -278,23 +280,18 @@ section#who {
   section#who .section-content .content-title {
     height: 400px;
     /*TO REMOVE */ }
-    section#who .section-content .content-title .dummy-background-content {
+    section#who .section-content .content-title .dummy-background {
       background-color: white; }
 
 section#news {
   position: relative; }
-  section#news .dummy-background-header {
-    background: #40bb6a;
-    background: -moz-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #40bb6a), color-stop(50%, #40bb6a), color-stop(50%, #40bb6a), color-stop(100%, #40bb6a));
-    background: -webkit-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -o-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: -ms-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    background: linear-gradient(to bottom, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
+  section#news #news_header {
+    position: relative; }
+    section#news #news_header .dummy-background-1, section#news #news_header .dummy-background-2 {
+      background: #40bb6a; }
   section#news .section-content {
     background: white; }
-    section#news .section-content .dummy-background-content {
+    section#news .section-content .dummy-background {
       background: white; }
     section#news .section-content .content-title {
       padding: 35px 20px 50px 20px; }
@@ -317,21 +314,7 @@ section#news {
 
 section#partners {
   position: relative; }
-  section#partners .dummy-background-header {
-    background: #7b7979;
-    background: -moz-linear-gradient(top, #7b7979 0%, #7b7979 50%, #7b7979 50%, #7b7979 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #7b7979), color-stop(50%, #7b7979), color-stop(50%, #7b7979), color-stop(100%, #7b7979));
-    background: -webkit-linear-gradient(top, #7b7979 0%, #7b7979 50%, #7b7979 50%, #7b7979 100%);
-    background: -o-linear-gradient(top, #7b7979 0%, #7b7979 50%, #7b7979 50%, #7b7979 100%);
-    background: -ms-linear-gradient(top, #7b7979 0%, #7b7979 50%, #7b7979 50%, #7b7979 100%);
-    background: linear-gradient(to bottom, #7b7979 0%, #7b7979 50%, #7b7979 50%, #7b7979 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#partners .dummy-background-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1;
+  section#partners .dummy-background-1, section#partners .dummy-background-2, section#partners .dummy-background {
     background: #7b7979; }
   section#partners .section-content .content-list {
     padding: 20px 20px 50px 20px; }
@@ -369,11 +352,6 @@ footer {
   text-transform: uppercase;
   font-size: 12px; }
   footer .dummy-background {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1;
     background: #333333; }
   footer .footer-content {
     max-width: 1024px;

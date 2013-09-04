@@ -129,16 +129,6 @@ $gray3: #7b7979;
 	margin: auto;
 }
 
-@mixin two-color-div($color1, $color2) {
-	background: $color1;
-	background: -moz-linear-gradient(top, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(50%, $color1), color-stop(50%, $color2), color-stop(100%, $color2));
-	background: -webkit-linear-gradient(top, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
-	background: -o-linear-gradient(top, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
-	background: -ms-linear-gradient(top, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
-	background: linear-gradient(to bottom, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2, GradientType=0 );
-}
 
 .section-header {
 	@include content-center;
@@ -150,28 +140,42 @@ $gray3: #7b7979;
 .section-content {
 	@include content-center;
 
-	.dummy-background-content {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		left: 0;
-		z-index: -1;
-	}
+
 }
+
+.dummy-background, .dummy-background-1, .dummy-background-2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	z-index: -1;
+}
+
 
 /*** Section Styles ***/
 
 /* ### HOME ### */
 section#home {
 	width: 100%;
+	margin-bottom: -6px;
 
-	.dummy-background-header {
-		/* the background with two colors */
-		@include two-color-div($gray1, $gray2);
+	
 
+	#home_header {
 		position: fixed;
 		width: 100%;
 		z-index: 2;
+
+		.dummy-background-1 {
+			background: $gray1;
+			height: 50%;
+		}
+
+		.dummy-background-2 {
+			background: $gray2;
+			height: 50%;
+			top: 50%;
+		}
 
 		.header-logo, .header-nav {
 			position: relative;
@@ -221,43 +225,67 @@ section#home {
 			max-width: 100%;
 			margin-top: 80px;
 		}
+
+
 	}
+
 }
 
 /* ### WHAT ### */
 section#what {
-	.dummy-background-header {
+	border-style: solid;
+	border-width: 0px 0px 7px;
+	border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat;
 
-		/* the background with two colors */
-		@include two-color-div($orange1, $orange2);
+
+	#what_header.dummy-separator {
 		position: relative;
-		z-index: 1
+
+		border-style: solid;
+		border-width: 7px 0px 0px;
+		border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
+
+
+		.dummy-background-1 {
+			height: 50%;
+			top: 0;
+			background: $orange1;
+		}
+
+		.dummy-background-2 {
+			height: 50%;
+			top: 50%;
+			background: $orange2;
+		}
+	}
+
+	& > .dummy-background-1 {
+		position: relative;
+
+		.dummy-background-2 {
+			position: absolute;
+			width: 50%;
+			left: 50%;
+			background: $orange2;
+		}
 	}
 
 
+	& > .dummy-background-2 {
+		position: relative;
+		background: #4c4c4c;
+
+		border-radius: 100px 0px 0px 0px;
+	}
+
 	.section-content {
 		z-index: 2;
-
-
-		.dummy-background-content {
-			background: #ffffff;
-			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-			background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffb600 50%, #ffb600 100%);
-			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffb600), color-stop(100%,#ffb600));
-			background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-			background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-			background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-			background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 );
-		}
 
 
 		.content-title {
 			background: $orange2;
 
 			position: relative;
-
-
 
 			div.content-left {
 				background: white;
@@ -306,7 +334,7 @@ section#what {
 				z-index: 1;
 
 
-				.dummy-background-content {
+				.dummy-background {
 					top: 0;
 					background: $orange2;
 
@@ -332,13 +360,6 @@ section#what {
 			-moz-border-radius: 100px 0px 0px 0px;
 			border-radius: 100px 0px 0px 0px;
 
-
-			.dummy-background-content {
-				background: #4c4c4c;
-
-				border-radius: 100px 0px 0px 0px;
-			}
-
 			.list-item {
 				padding-top: 90px;
 
@@ -355,6 +376,7 @@ section#what {
 				height: 110px;  /* add span with 100px and make this auto */
 				overflow: visible;
 			}
+
 			h2, p { color: white; }
 
 			h2 {
@@ -362,6 +384,7 @@ section#what {
 				font-size: 95%;
 				margin: 30px 50% 0px 0px;
 			}
+
 			p {
 				font-size: 12px;
 			}
@@ -376,12 +399,22 @@ section#what {
 section#who {
 	position: relative;
 
-	.dummy-background-header {
-		@include two-color-div($blue1, $blue1);
+	#who_header {
+		position: relative;
+
+		.dummy-background-1, .dummy-background-2 {
+			background: $blue1;
+		}
 	}
 
-	.dummy-background-content {
+	& > .dummy-background-1 {
+		position: relative;
 		background: $blue2;
+	}
+
+	& > .dummy-background-2 {
+		position: relative;
+		background: white;
 	}
 
 	.section-content {
@@ -406,7 +439,7 @@ section#who {
 		.content-title {
 			height: 400px;  /*TO REMOVE */
 
-			.dummy-background-content {
+			.dummy-background {
 				background-color: white;
 			}
 		}
@@ -416,14 +449,20 @@ section#who {
 section#news {
 	position: relative;
 
-	.dummy-background-header {
-		@include two-color-div($green1, $green1);
+	#news_header {
+		position: relative;
+
+		.dummy-background-1, .dummy-background-2 {
+			background: $green1;
+		}
 	}
+
+
 
 	.section-content {
 		background: white;
 
-		.dummy-background-content {
+		.dummy-background {
 			background: white;
 		}
 
@@ -464,16 +503,7 @@ section#news {
 section#partners {
 	position: relative;
 
-	.dummy-background-header {
-		@include two-color-div($gray3, $gray3);
-	}
-
-	.dummy-background-content {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		left: 0;
-		z-index: -1;
+	.dummy-background-1, .dummy-background-2, .dummy-background {
 		background: $gray3;
 	}
 
@@ -539,11 +569,6 @@ footer {
 	font-size: 12px;
 
 	.dummy-background {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		left: 0;
-		z-index: -1;
 		background: #333333;
 	}
 
