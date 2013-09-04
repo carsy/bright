@@ -3,35 +3,30 @@ $(document).ready(function() {
 
 	var headers = [
 		{
-			id: 'home_header',
-			marker: home_header.offset().top,
+			selector: '#home_header',
 			background: home_header.css('background-image')
 		},
 		{
-			id: 'what_header',
-			marker: $('#what_header').offset().top,
+			selector: '#what_header',
 			background: $('#what_header').css('background-image')
 		},
 		{
-			id: 'who_header',
-			marker: $('#who_header').offset().top,
+			selector: '#who_header',
 			background: $('#who_header').css('background-image')
 		},
 		{
-			id: 'news_header',
-			marker: $('#news_header').offset().top, 
+			selector: '#news_header',
 			background: $('#news_header').css('background-image')
 		},
 		{ 
-			id: 'partners_header',
-			marker: $('#partners_header').offset().top, 
+			selector: '#partners_header',
 			background: $('#partners_header').css('background-image')
 		}
 	];
 
 	var curMarker = -1
 	for(var i = 0; i < headers.length; ++i) {
-		if( home_header.offset().top >= headers[i].marker )
+		if( home_header.offset().top >= $(headers[i].selector).offset().top )
 			curMarker++;
 	}
 
@@ -40,7 +35,7 @@ $(document).ready(function() {
 
 		curMarker = -1;
 		for(var i = 0; i < headers.length; ++i) {
-			if( headerTop >= headers[i].marker )
+			if( headerTop >= $(headers[i].selector).offset().top )
 				curMarker++;
 		}
 		$('#home_header').css('background', headers[curMarker].background);
