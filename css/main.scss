@@ -140,16 +140,6 @@ $gray3: #7b7979;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2, GradientType=0 );
 }
 
-/*** For every section topic ***/
-
-.section-topic {
-	/*width: 100%;
-	margin: auto;*/
-
-	/*display: inline-block;*/
-
-}
-
 .section-header {
 	@include content-center;
 	height: 30px;
@@ -161,7 +151,7 @@ $gray3: #7b7979;
 	@include content-center;
 }
 
-/*** Individual styles for each section topic ***/
+/*** Section Styles ***/
 
 /* ### HOME ### */
 section#home {
@@ -248,30 +238,33 @@ section#what {
 	.section-content {
 		z-index: 2;
 
+
+		.dummy-background-content {
+			background: #ffffff;
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffb600 50%, #ffb600 100%);
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffb600), color-stop(100%,#ffb600));
+			background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+			background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+			background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+			background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 );
+		}
+
+
 		.content-title {
-			background-color: $orange2;
+			background: $orange2;
 
+			position: relative;
 
-			.dummy-background-content {
-				background: #ffffff;
-				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-				background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffb600 50%, #ffb600 100%);
-				background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffb600), color-stop(100%,#ffb600));
-				background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-				background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-				background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-				background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 );
-
-			    height: 340px;
-			}
 
 
 			div.content-left {
-				background-color: white;
+				background: white;
 				padding: 50px 60px 40px 50px;
-				max-height: 340px;
-				height: 340px;
+				height: 100%;
+				min-height: 100%;
+				position: absolute;
 
 				-webkit-border-radius: 0px 100px 0px 0px;
 				-moz-border-radius: 0px 100px 0px 0px;
@@ -303,10 +296,9 @@ section#what {
 			}
 
 			div.content-right {
-				background-color: white;
-				
+				background: white;
+				left: 50%;
 				position: relative;
-				max-width: inherit;
 				height: inherit;
 				padding: 50px 50px 50px 80px;
 				z-index: 1;
@@ -340,7 +332,7 @@ section#what {
 
 
 			.dummy-background-content {
-				background-color: #4c4c4c;
+				background: #4c4c4c;
 
 				border-radius: 100px 0px 0px 0px;
 			}
