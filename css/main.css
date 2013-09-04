@@ -170,19 +170,17 @@ section#what .section-content {
   z-index: 2; }
   section#what .section-content .content-title {
     background-color: #ffb600; }
-    section#what .section-content .content-title .dummy-background-content-right {
-      position: absolute;
-      height: 340px;
-      width: 100%;
-      left: 50%;
-      z-index: 0;
-      background-color: white; }
     section#what .section-content .content-title .dummy-background-content {
-      position: absolute;
-      left: 75%;
-      height: 340px;
-      background-color: #ffb600;
-      z-index: 1; }
+      background: #ffffff;
+      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -moz-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #ffb600), color-stop(100%, #ffb600));
+      background: -webkit-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
+      background: -o-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
+      background: -ms-linear-gradient(left, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
+      background: linear-gradient(to right, white 0%, white 50%, #ffb600 50%, #ffb600 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 );
+      height: 340px; }
     section#what .section-content .content-title div.content-left {
       background-color: white;
       padding: 50px 60px 40px 50px;
@@ -192,10 +190,6 @@ section#what .section-content {
       -moz-border-radius: 0px 100px 0px 0px;
       border-radius: 0px 100px 0px 0px;
       overflow: hidden; }
-      section#what .section-content .content-title div.content-left .dummy-background-content {
-        background-color: #ffb600;
-        height: 440px;
-        width: 512px; }
       section#what .section-content .content-title div.content-left h1 {
         /*font-size: 56px;*/
         /*width: 80%;*/
@@ -214,19 +208,18 @@ section#what .section-content {
         color: #4c4c4c;
         overflow: hidden; }
     section#what .section-content .content-title div.content-right {
-      background-color: #ffb600;
+      background-color: white;
       position: relative;
       max-width: inherit;
       height: inherit;
       padding: 50px 50px 50px 80px;
-      z-index: 1;
-      -webkit-border-radius: 0px 0px 0px 100px;
-      -moz-border-radius: 0px 0px 0px 100px;
-      border-radius: 0px 0px 0px 100px; }
+      z-index: 1; }
       section#what .section-content .content-title div.content-right .dummy-background-content {
-        background-color: white;
-        height: 440px;
-        width: 512px; }
+        top: 0;
+        background: #ffb600;
+        -webkit-border-radius: 0px 0px 0px 100px;
+        -moz-border-radius: 0px 0px 0px 100px;
+        border-radius: 0px 0px 0px 100px; }
       section#what .section-content .content-title div.content-right img {
         max-width: 100%;
         height: auto;
@@ -289,7 +282,7 @@ section#who {
         filter: drop-shadow(0px 0px 35px white); }
   section#who .section-content .content-title {
     height: 400px;
-    /* TO REMOVE */ }
+    /*TO REMOVE */ }
     section#who .section-content .content-title .dummy-background-content {
       background-color: white; }
 
@@ -304,24 +297,21 @@ section#news {
     background: -ms-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
     background: linear-gradient(to bottom, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#news .section-content {
-    height: 600px;
-    /* TO REMOVE */ }
-    section#news .section-content .content-title {
-      padding: 35px 20px 50px 20px; }
-      section#news .section-content .content-title span {
-        display: block;
-        font-size: 12px; }
-      section#news .section-content .content-title .item-header {
-        color: #40bb6a;
-        font-weight: bolder;
-        font-size: 18px;
-        line-height: 18px; }
-      section#news .section-content .content-title .item-date {
-        font-weight: bold;
-        margin-top: 5px; }
-      section#news .section-content .content-title .item-source {
-        margin-bottom: 5px; }
+  section#news .section-content .content-title {
+    padding: 35px 20px 50px 20px; }
+    section#news .section-content .content-title span {
+      display: block;
+      font-size: 12px; }
+    section#news .section-content .content-title .item-header {
+      color: #40bb6a;
+      font-weight: bolder;
+      font-size: 18px;
+      line-height: 18px; }
+    section#news .section-content .content-title .item-date {
+      font-weight: bold;
+      margin-top: 5px; }
+    section#news .section-content .content-title .item-source {
+      margin-bottom: 5px; }
 
 section#partners {
   position: relative; }
@@ -371,8 +361,6 @@ section#partners {
 footer {
   background-color: #333333;
   position: relative;
-  	/*height: 150px;  TO REMOVE 
-  */
   text-transform: uppercase;
   font-size: 12px; }
   footer .dummy-background {

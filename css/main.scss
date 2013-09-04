@@ -251,21 +251,19 @@ section#what {
 		.content-title {
 			background-color: $orange2;
 
-			.dummy-background-content-right {
-			    position: absolute;
-			    height: 340px;
-			    width: 100%;
-			    left: 50%;
-			    z-index: 0;
-			    background-color: white;
-			}
 
 			.dummy-background-content {
-			    position: absolute;
-			    left: 75%;
+				background: #ffffff;
+				background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmYjYwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmI2MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+				background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 50%, #ffb600 50%, #ffb600 100%);
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ffb600), color-stop(100%,#ffb600));
+				background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+				background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+				background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+				background: linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#ffb600 50%,#ffb600 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffb600',GradientType=1 );
+
 			    height: 340px;
-			    background-color: #ffb600;
-				z-index: 1;
 			}
 
 
@@ -278,12 +276,6 @@ section#what {
 				-webkit-border-radius: 0px 100px 0px 0px;
 				-moz-border-radius: 0px 100px 0px 0px;
 				border-radius: 0px 100px 0px 0px;
-
-				.dummy-background-content {
-					background-color: $orange2;
-					height: 440px;
-					width: 512px;
-				}
 
 				overflow: hidden;
 
@@ -311,7 +303,7 @@ section#what {
 			}
 
 			div.content-right {
-				background-color: #ffb600;
+				background-color: white;
 				
 				position: relative;
 				max-width: inherit;
@@ -319,14 +311,14 @@ section#what {
 				padding: 50px 50px 50px 80px;
 				z-index: 1;
 
-				-webkit-border-radius: 0px 0px 0px 100px;
-				-moz-border-radius: 0px 0px 0px 100px;
-				border-radius: 0px 0px 0px 100px;
 
 				.dummy-background-content {
-					background-color: white;
-					height: 440px;
-					width: 512px;
+					top: 0;
+					background: $orange2;
+
+					-webkit-border-radius: 0px 0px 0px 100px;
+					-moz-border-radius: 0px 0px 0px 100px;
+					border-radius: 0px 0px 0px 100px;
 				}
 
 				img {
@@ -416,7 +408,7 @@ section#who {
 		}
 		
 		.content-title {
-			height: 400px; /* TO REMOVE */
+			height: 400px;  /*TO REMOVE */
 
 			.dummy-background-content {
 				background-color: white;
@@ -433,7 +425,6 @@ section#news {
 	}
 
 	.section-content {
-		height: 600px; /* TO REMOVE */
 
 
 		.content-title {
@@ -533,8 +524,6 @@ footer {
 	background-color: #333333;
 
 	position: relative;
-	/*height: 150px;  TO REMOVE 
-*/
 
 	text-transform: uppercase;
 	font-size: 12px;

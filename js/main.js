@@ -58,17 +58,4 @@ $(document).ready(function() {
 		});
 	})
 
-	
-	$(window).resize(function() {
-		var dummy_right = $('section#what .dummy-background-content-right');
-		dummy_right.css('width', $('section#what div.content-right').outerWidth());
-		var dummy_bg = $('section#what .content-title .dummy-background-content');
-		dummy_bg.css('left', parseInt(dummy_right.position().left, 10) + parseInt(dummy_right.outerWidth(), 10));
-
-		var content_right = $('section#what section.section-content');
-		dummy_bg.css('width', parseInt(content_right.css('margin-right'), 10) + parseInt(content_right.css('padding-right'), 10));
-	});
-
-	$(window).resize();
-
 });
