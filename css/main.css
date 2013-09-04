@@ -87,15 +87,21 @@ a {
 /* dimensions */
 /* colors */
 .section-header {
-  max-width: 800px;
+  max-width: 1024px;
   margin: auto;
   height: 30px;
-  width: 760px;
+  width: 984px;
   padding: 25px 20px; }
 
 .section-content {
-  max-width: 800px;
+  max-width: 1024px;
   margin: auto; }
+  .section-content .dummy-background-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1; }
 
 /*** Section Styles ***/
 /* ### HOME ### */
@@ -154,12 +160,6 @@ section#what .dummy-background-header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 );
   position: relative;
   z-index: 1; }
-section#what .dummy-background-content {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  z-index: -1; }
 section#what .section-content {
   z-index: 2; }
   section#what .section-content .dummy-background-content {
@@ -180,6 +180,7 @@ section#what .section-content {
       padding: 50px 60px 40px 50px;
       height: 100%;
       min-height: 100%;
+      width: 50%;
       position: absolute;
       -webkit-border-radius: 0px 100px 0px 0px;
       -moz-border-radius: 0px 100px 0px 0px;
@@ -207,6 +208,7 @@ section#what .section-content {
       left: 50%;
       position: relative;
       height: inherit;
+      width: 50%;
       padding: 50px 50px 50px 80px;
       z-index: 1; }
       section#what .section-content .content-title div.content-right .dummy-background-content {
@@ -229,6 +231,9 @@ section#what .section-content {
       border-radius: 100px 0px 0px 0px; }
     section#what .section-content .content-list .list-item {
       padding-top: 90px; }
+      @media only screen and (max-width: 600px) {
+        section#what .section-content .content-list .list-item {
+          padding-top: 30px; } }
     section#what .section-content .content-list img {
       width: auto;
       max-height: 150px;
@@ -257,11 +262,6 @@ section#who {
     background: linear-gradient(to bottom, #66ccc6 0%, #66ccc6 50%, #66ccc6 50%, #66ccc6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
   section#who .dummy-background-content {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    z-index: -1;
     background: #3abebe; }
   section#who .section-content .content-list {
     padding: 50px 20px 0px 20px; }
@@ -292,21 +292,28 @@ section#news {
     background: -ms-linear-gradient(top, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
     background: linear-gradient(to bottom, #40bb6a 0%, #40bb6a 50%, #40bb6a 50%, #40bb6a 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color1, endColorstr=$color2, GradientType=0 ); }
-  section#news .section-content .content-title {
-    padding: 35px 20px 50px 20px; }
-    section#news .section-content .content-title span {
-      display: block;
-      font-size: 12px; }
-    section#news .section-content .content-title .item-header {
-      color: #40bb6a;
-      font-weight: bolder;
-      font-size: 18px;
-      line-height: 18px; }
-    section#news .section-content .content-title .item-date {
-      font-weight: bold;
-      margin-top: 5px; }
-    section#news .section-content .content-title .item-source {
-      margin-bottom: 5px; }
+  section#news .section-content {
+    background: white; }
+    section#news .section-content .dummy-background-content {
+      background: white; }
+    section#news .section-content .content-title {
+      padding: 35px 20px 50px 20px; }
+      section#news .section-content .content-title span {
+        display: block;
+        font-size: 12px; }
+      @media only screen and (max-width: 600px) {
+        section#news .section-content .content-title .list-item {
+          padding-bottom: 30px; } }
+      section#news .section-content .content-title .item-header {
+        color: #40bb6a;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 18px; }
+      section#news .section-content .content-title .item-date {
+        font-weight: bold;
+        margin-top: 5px; }
+      section#news .section-content .content-title .item-source {
+        margin-bottom: 5px; }
 
 section#partners {
   position: relative; }
@@ -330,6 +337,9 @@ section#partners {
     padding: 20px 20px 50px 20px; }
     section#partners .section-content .content-list .list-item {
       color: white; }
+      @media only screen and (max-width: 600px) {
+        section#partners .section-content .content-list .list-item {
+          padding-bottom: 50px; } }
       section#partners .section-content .content-list .list-item span {
         display: block; }
       section#partners .section-content .content-list .list-item .item-img {
@@ -366,7 +376,7 @@ footer {
     z-index: -1;
     background: #333333; }
   footer .footer-content {
-    max-width: 800px;
+    max-width: 1024px;
     margin: auto; }
     footer .footer-content .content-list {
       padding: 50px 20px 50px 20px; }
