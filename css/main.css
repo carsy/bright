@@ -97,7 +97,9 @@ a {
   max-width: 1024px;
   margin: auto; }
 
-.dummy-background, .dummy-background-1, .dummy-background-2 {
+.dummy-background,
+.dummy-background-1,
+.dummy-background-2 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -151,11 +153,17 @@ section#home {
 section#what {
   border-style: solid;
   border-width: 0px 0px 7px;
+  -webkit-border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat;
+  -moz-border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat;
+  -o-border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat;
   border-image: url(../img/triangle-gray.png) 0 0 7 fill repeat; }
   section#what #what_header.dummy-separator {
     position: relative;
     border-style: solid;
     border-width: 7px 0px 0px;
+    -webkit-border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
+    -moz-border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
+    -o-border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
     border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat; }
     section#what #what_header.dummy-separator .dummy-background-1 {
       height: 50%;
@@ -166,7 +174,8 @@ section#what {
       top: 50%;
       background: #ffb600; }
   section#what > .dummy-background-1 {
-    position: relative; }
+    position: relative;
+    z-index: 0; }
     section#what > .dummy-background-1 .dummy-background-2 {
       position: absolute;
       width: 50%;
@@ -175,6 +184,7 @@ section#what {
   section#what > .dummy-background-2 {
     position: relative;
     background: #4c4c4c;
+    z-index: 0;
     border-radius: 100px 0px 0px 0px; }
   section#what .section-content {
     z-index: 2; }
@@ -251,6 +261,19 @@ section#what {
         margin: 30px 50% 0px 0px; }
       section#what .section-content .content-list p {
         font-size: 12px; }
+      section#what .section-content .content-list .expander {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+        color: white;
+        height: 20px;
+        width: 20px; }
+        section#what .section-content .content-list .expander:hover {
+          cursor: pointer;
+          cursor: hand; }
 
 /* ### WHO ### */
 section#who {
