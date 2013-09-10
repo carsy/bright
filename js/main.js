@@ -51,7 +51,7 @@ $(document).ready(function() {
 	});
 
 	// Adds animation for section transitions
-	$('a[href=#home], a[href=#what], a[href=#who], a[href=#news], a[href=#partners]').click(function() {
+	$('a[href=#home], a[href=#what], a[href=#who], a[href=#news], a[href=#partners]').click(function(event) {
 		var href = $(this).attr('href');
 		var top2scroll2 = (href == '#home' ? 0 : $(href + '_header').offset().top);
 
@@ -63,6 +63,8 @@ $(document).ready(function() {
 			$('#home_header > .dummy-background-1').css('background-color', headers[curMarker].background1);
 			$('#home_header > .dummy-background-2').css('background-color', headers[curMarker].background2);
 		});
+
+		event.preventDefault();
 	});
 
 	$('.expander').click(function() {
