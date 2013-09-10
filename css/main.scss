@@ -95,12 +95,15 @@ textarea {
 
 @font-face {
 	font-family: Akkurat;
-	src: url("../fonts/akkurat/Akkurat.ttf");
+	src: url("../fonts/akkurat/Akkurat.otf");
+}
+
+* {
+	font-family: Akkurat;
 }
 
 a {
 	text-decoration: none;
- 	font-family: Akkurat;
 	color: #fff;
 }
 
@@ -139,7 +142,6 @@ $gray3: #7b7979;
 
 .section-content {
 	@include content-center;
-
 
 }
 
@@ -190,8 +192,15 @@ section#home {
 
 		.header-logo {
 			float: left;
+			-webkit-transform: scale(1,1.5);
+			-moz-transform: scale(1,1.5);
+			-ms-transform: scale(1,1.5);
+			-o-transform: scale(1,1.5);
+			transform: scale(1,1.5);
+			
 
 			font-size: 24px;
+			font-weight: bold;
 			a {
 				margin: 0;
 				padding: 0;
@@ -428,6 +437,7 @@ section#what {
 /* ### WHO ### */
 section#who {
 	position: relative;
+	z-index: 0;
 
 	#who_header {
 		position: relative;
@@ -460,9 +470,10 @@ section#who {
 
 				&:hover {
 					-webkit-filter: drop-shadow(0px 0px 35px white);
-					-moz-filter: drop-shadow(0px 0px 35px white); /* #FIXME */
+					-moz-filter: url(../img/drop-shadows.svg#drop-shadow); /* #FIXME */
 					filter: drop-shadow(0px 0px 35px white);
 				}
+
 			}
 		}
 		
