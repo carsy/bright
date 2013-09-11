@@ -64,28 +64,34 @@ $(document).ready(function() {
 			$('#home_header > .dummy-background-2').css('background-color', headers[curMarker].background2);
 		});
 
+		history.replaceState(null, '', href); // FIXME
+
 		event.preventDefault();
 	});
 
-	$('.expander').click(function() {
-		if( $(this).html() == "+" ) {
-			$(this).html(">");
+	$('.expander').click(function(event) {
+		$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]').slideToggle('slow');
+	
+		if( $(this).children().text() == "+" ) {
+			$(this).children().text(">");
 
 			$('.expander').not($(this)).each(function() {
-				if ($(this).html() == '+')
+				if ($(this).children().text() == "+")
 					return;
 
-				$(this).html("+");
+				$(this).children().text("+");
 
-				$('div.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]')
-					.slideToggle('fast');
-			});
+
+				$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]')
+					.slideToggle('slow')
+				});
 		}
 		else {
-			$(this).html("+");
+			$(this).children().text("+");
 		}
 
-		$('div.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]').slideToggle('slow');
+		history.replaceState(null, '', $(this).id()); // FIXME
+		event.preventDefault();
 	});
 
 	/*

@@ -244,7 +244,6 @@ section#home {
 
 /* ### WHAT ### */
 section#what {
-	margin-bottom: -7px;
 
 	#what_header.dummy-separator {
 		position: relative;
@@ -290,29 +289,54 @@ section#what {
 		z-index: 0;
 
 		border-radius: 100px 0px 0px 0px;
-		border-style: solid;
-		border-width: 0px 0px 7px;
-
-		-webkit-border-image: url(../img/triangle-white.png) 0 0 7 fill repeat;
-		-moz-border-image:  url(../img/triangle-white.png) 0 0 7 fill repeat;
-		-o-border-image: url(../img/triangle-white.png) 0 0 7 fill repeat;
-		border-image: url(../img/triangle-white.png) 0 0 7 fill repeat;
 
 	}
 
 	& > .dummy-background-3 {
 		position: relative;
+		background: transparent;
+
+		z-index: 1;
+		border-style: solid;
+		border-width: 7px 0px 0px 0px;
+
+		-webkit-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+		-moz-border-image:  url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+		-o-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+		border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+
+		background-image: url(../img/what-item1-2.png);
+		background-repeat: no-repeat;
+		background-position: 60%; 
+	}
+
+	.expanded-content {
+		position: relative;
 		z-index: 0;
-		background: white;
+		background: transparent;
 
 		display: none;
+
+		.dummy-background {
+			z-index: 2;
+			border-style: solid;
+			border-width: 7px 0px 0px 0px;
+
+			-webkit-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+			-moz-border-image:  url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+			-o-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+			border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
+
+		}
 
 		span {
 			display: inline-block;
 		}
 
 		.item-container {
-			padding: 50px 600px 50px 20px; 
+			padding: 50px 600px 50px 20px;
+
+
 		}
 
 		.item-header {
@@ -476,7 +500,9 @@ section#what {
 /* ### WHO ### */
 section#who {
 	position: relative;
-	z-index: 0;
+	z-index: 1;
+
+	margin-top: -6px;
 
 	#who_header {
 		position: relative;
