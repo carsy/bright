@@ -68,10 +68,24 @@ $(document).ready(function() {
 	});
 
 	$('.expander').click(function() {
-		if( $(this).html() == "+" )
+		if( $(this).html() == "+" ) {
 			$(this).html(">");
-		else
+
+			$('.expander').not($(this)).each(function() {
+				if ($(this).html() == '+')
+					return;
+
+				$(this).html("+");
+
+				$('div.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]')
+					.slideToggle('fast');
+			});
+		}
+		else {
 			$(this).html("+");
+		}
+
+		$('div.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]').slideToggle('slow');
 	});
 
 	/*
