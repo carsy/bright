@@ -319,6 +319,8 @@ section#what .section-content {
       section#what .section-content .content-list .expander:hover {
         cursor: pointer;
         cursor: hand; }
+      section#what .section-content .content-list .expander a {
+        outline: none; }
 
 /* ### WHO ### */
 section#who {
