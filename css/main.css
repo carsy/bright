@@ -441,16 +441,16 @@ section#partners {
   section#partners > .dummy-background-2 {
     position: relative;
     background: white; }
-  section#partners .section-content#partners-content .content-list {
+  section#partners .section-content#partners_content .content-list {
     padding: 20px 20px 50px 20px; }
-    section#partners .section-content#partners-content .content-list .list-item {
+    section#partners .section-content#partners_content .content-list .list-item {
       color: white; }
       @media only screen and (max-width: 600px) {
-        section#partners .section-content#partners-content .content-list .list-item {
+        section#partners .section-content#partners_content .content-list .list-item {
           padding-bottom: 50px; } }
-      section#partners .section-content#partners-content .content-list .list-item span {
+      section#partners .section-content#partners_content .content-list .list-item span {
         display: block; }
-      section#partners .section-content#partners-content .content-list .list-item .item-img {
+      section#partners .section-content#partners_content .content-list .list-item .item-img {
         height: 160px;
         width: 160px;
         background-color: white;
@@ -460,25 +460,58 @@ section#partners {
         display: table-cell;
         text-align: center;
         vertical-align: middle; }
-      section#partners .section-content#partners-content .content-list .list-item .item-header {
+      section#partners .section-content#partners_content .content-list .list-item .item-header {
         margin-top: 20px;
         margin-bottom: 5px;
         text-transform: uppercase;
         font-weight: bolder; }
-      section#partners .section-content#partners-content .content-list .list-item .item-content {
+      section#partners .section-content#partners_content .content-list .list-item .item-content {
         margin-bottom: 10px;
         font-size: 12px; }
-      section#partners .section-content#partners-content .content-list .list-item .item-link {
+      section#partners .section-content#partners_content .content-list .list-item .item-link {
         font-size: 18px; }
-  section#partners .section-content#clients-content .content-list {
+  section#partners .section-content#clients_content .content-list {
     padding: 50px 20px 50px 20px; }
-    section#partners .section-content#clients-content .content-list .list-item .item-header {
+    section#partners .section-content#clients_content .content-list .list-item .item-header {
       display: block;
       padding-bottom: 10px;
       color: red;
       font-weight: bold;
       font-size: 1.2em; }
-    section#partners .section-content#clients-content .content-list .list-item .item-content {
+    section#partners .section-content#clients_content .content-list .list-item .item-content {
+      font-size: 12px; }
+
+#contacts {
+  position: relative; }
+  #contacts #contacts_header .dummy-background-1, #contacts #contacts_header .dummy-background-2 {
+    background: #f46d57; }
+  #contacts > .dummy-background-1 {
+    position: relative;
+    background: #f46d57; }
+    #contacts > .dummy-background-1 .content-info {
+      padding: 50px 20px 50px 20px;
+      color: white;
+      font-size: 12px; }
+      #contacts > .dummy-background-1 .content-info span {
+        padding-bottom: 8px;
+        display: block; }
+  #contacts > .dummy-background-2 {
+    position: relative;
+    background: white; }
+    #contacts > .dummy-background-2 .section-content {
+      background-color: white;
+      background-image: url("../img/contacts-background.png");
+      background-repeat: no-repeat;
+      background-position: right bottom; }
+    #contacts > .dummy-background-2 .content-container {
+      padding: 50px 20px 50px 20px; }
+    #contacts > .dummy-background-2 .content-header {
+      color: red;
+      display: block;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-bottom: 10px; }
+    #contacts > .dummy-background-2 .content {
       font-size: 12px; }
 
 footer {

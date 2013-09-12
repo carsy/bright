@@ -27,6 +27,11 @@ $(document).ready(function() {
 			selector: '#partners_header',
 			background1: $('#partners_header > .dummy-background-1').css('background-color'),
 			background2: $('#partners_header > .dummy-background-2').css('background-color')
+		},
+		{
+			selector: '#contacts_header',
+			background1: $('#contacts_header > .dummy-background-1').css('background-color'),
+			background2: $('#contacts_header > .dummy-background-2').css('background-color')
 		}
 	];
 
@@ -51,7 +56,7 @@ $(document).ready(function() {
 	});
 
 	// Adds animation for section transitions
-	$('a[href=#home], a[href=#what], a[href=#who], a[href=#news], a[href=#partners]').click(function(event) {
+	$('a[href=#home], a[href=#what], a[href=#who], a[href=#news], a[href=#partners], a[href=#contacts]').click(function(event) {
 		var href = $(this).attr('href');
 		var top2scroll2 = (href == '#home' ? 0 : $(href + '_header').offset().top);
 

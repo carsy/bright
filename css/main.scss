@@ -126,6 +126,9 @@ $green2: #78ce7e;
 
 $gray3: #7b7979;
 
+$red1: #f46d57;
+$red2: #ff0000;
+
 
 @mixin content-center {
 	max-width: $max-width;
@@ -668,6 +671,7 @@ section#news {
 				font-weight: bold;
 
 				letter-spacing: 1px;
+
 			}
 
 			.content-container {
@@ -706,7 +710,7 @@ section#partners {
 		background: white;
 	}
 
-	.section-content#partners-content {
+	.section-content#partners_content {
 
 		.content-list {
 			padding: 20px 20px 50px 20px;
@@ -758,7 +762,7 @@ section#partners {
 		}
 	}
 
-	.section-content#clients-content {
+	.section-content#clients_content {
 		.content-list {
 			padding: 50px 20px 50px 20px;
 
@@ -777,6 +781,65 @@ section#partners {
 			}
 		}
 	}
+}
+
+#contacts {
+	position: relative;
+
+
+	#contacts_header {
+		.dummy-background-1, .dummy-background-2 {
+			background: $red1;
+		}
+	}
+
+	& > .dummy-background-1 {
+		position: relative;
+		background: $red1;
+
+		.content-info {
+			padding: 50px 20px 50px 20px;
+
+			color: white;
+			font-size: 12px;
+
+			span {
+				padding-bottom: 8px;
+
+				display: block;
+			}
+		}
+	}
+
+	& > .dummy-background-2 {
+		position: relative;
+		background: white;
+
+		.section-content {
+			background-color: white;
+			background-image: url('../img/contacts-background.png');
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+
+		.content-container {
+			padding: 50px 20px 50px 20px;
+		}
+
+		.content-header {
+			color: $red2;
+			display: block;
+			font-size: 1.2em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+
+		.content {
+			font-size: 12px;
+		}
+
+	}
+
 }
 
 footer {
