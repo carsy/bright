@@ -230,6 +230,40 @@ section#home {
 
 				vertical-align: middle;
 
+				@mixin fancy_underline($link) {
+					-webkit-border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
+					-moz-border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
+					border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
+
+ 					/* refactor font-size and border-width */
+					border-width: 0px 0px 8px 0px;
+					border-style: solid;
+					padding: 0px 8px;
+					
+				}
+
+				a[href='#what']:hover {
+					@include fancy_underline('what');
+				}
+
+				a[href='#who']:hover {
+					@include fancy_underline('who');
+				}
+
+				a[href='#news']:hover {
+					/*@include fancy_underline('news');*/
+					border-bottom: 2px dashed white;
+				}
+
+				a[href='#partners']:hover {
+					@include fancy_underline('partners');
+				}
+
+				a[href='#contacts']:hover {
+					@include fancy_underline('contacts');
+				}
+
+				
 			}
 		}
 	}

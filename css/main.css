@@ -154,6 +154,41 @@ section#home {
         float: right;
         display: inline-block;
         vertical-align: middle; }
+        section#home .section-header .header-nav span a[href='#what']:hover {
+          -webkit-border-image: url("../img/what_underline.svg") 0 0 8 fill repeat;
+          -moz-border-image: url("../img/what_underline.svg") 0 0 8 fill repeat;
+          border-image: url("../img/what_underline.svg") 0 0 8 fill repeat;
+          /* refactor font-size and border-width */
+          border-width: 0px 0px 8px 0px;
+          border-style: solid;
+          padding: 0px 8px; }
+        section#home .section-header .header-nav span a[href='#who']:hover {
+          -webkit-border-image: url("../img/who_underline.svg") 0 0 8 fill repeat;
+          -moz-border-image: url("../img/who_underline.svg") 0 0 8 fill repeat;
+          border-image: url("../img/who_underline.svg") 0 0 8 fill repeat;
+          /* refactor font-size and border-width */
+          border-width: 0px 0px 8px 0px;
+          border-style: solid;
+          padding: 0px 8px; }
+        section#home .section-header .header-nav span a[href='#news']:hover {
+          /*@include fancy_underline('news');*/
+          border-bottom: 2px dashed white; }
+        section#home .section-header .header-nav span a[href='#partners']:hover {
+          -webkit-border-image: url("../img/partners_underline.svg") 0 0 8 fill repeat;
+          -moz-border-image: url("../img/partners_underline.svg") 0 0 8 fill repeat;
+          border-image: url("../img/partners_underline.svg") 0 0 8 fill repeat;
+          /* refactor font-size and border-width */
+          border-width: 0px 0px 8px 0px;
+          border-style: solid;
+          padding: 0px 8px; }
+        section#home .section-header .header-nav span a[href='#contacts']:hover {
+          -webkit-border-image: url("../img/contacts_underline.svg") 0 0 8 fill repeat;
+          -moz-border-image: url("../img/contacts_underline.svg") 0 0 8 fill repeat;
+          border-image: url("../img/contacts_underline.svg") 0 0 8 fill repeat;
+          /* refactor font-size and border-width */
+          border-width: 0px 0px 8px 0px;
+          border-style: solid;
+          padding: 0px 8px; }
   section#home .section-content img#front-cover {
     max-width: 100%;
     margin-top: 80px; }

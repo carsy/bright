@@ -60,7 +60,7 @@ $(document).ready(function() {
 		var href = $(this).attr('href');
 		var top2scroll2 = (href == '#home' ? 0 : $(href + '_header').offset().top);
 
-		stop();
+		window.stop();
 
 		$('html, body').animate({
  			scrollTop: top2scroll2+1,
@@ -76,6 +76,8 @@ $(document).ready(function() {
 	var what_section = $('#what');
 
 	$('.expander', what_section).click(function(event) {
+		$('*').stop();
+
 		$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', what_section)
 			.slideToggle('slow');
 	
@@ -90,7 +92,7 @@ $(document).ready(function() {
 
 
 				$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', what_section)
-					.slideToggle('fast')
+					.slideToggle('fast');
 				});
 		}
 		else {
@@ -103,6 +105,8 @@ $(document).ready(function() {
 
 	var news_section = $('#news');
 	$('.expander', news_section).click(function(event) {
+		$('*').stop();
+		
 		$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', news_section)
 			.slideToggle('slow');
 	
