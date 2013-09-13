@@ -251,8 +251,7 @@ section#home {
 				}
 
 				a[href='#news']:hover {
-					/*@include fancy_underline('news');*/
-					border-bottom: 2px dashed white;
+					@include fancy_underline('news');
 				}
 
 				a[href='#partners']:hover {
