@@ -1,14 +1,14 @@
 ### Sections ###
 
  "what we do"
-   [-] Project description and pictures on expand
+   [x] Project description and pictures on expand
 
  "who we are"
    [-] description of each team on click (or hover?)
 
  "news"
-   [-] detailed news on expand
-   [-] link to original source (?)
+   [x] detailed news on expand
+   [?] link to original source
 
  "partners"
    [-] ...
@@ -21,7 +21,7 @@
 
  img:
    [x] convert front cover to jpeg
-   [-] draw the images with css (?)
+   [?] draw the images with css
 
  css:
    [b] [section] "what" title - h1 and p overflows

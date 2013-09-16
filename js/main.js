@@ -132,6 +132,28 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+	var map;
+	var center = new google.maps.LatLng(41.1629652, -8.649747100000013);
+
+	function initialize() {
+		var mapOptions = {
+			zoom: 15,
+			center: center,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map($('.content-map')[0], mapOptions);
+
+
+		new google.maps.Marker({
+			map: map,
+			draggable: false,
+			animation: google.maps.Animation.DROP,
+			position: center
+		});
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+
 	/*
 
 	var context = document.getElementById('what_canvas').getContext('2d');

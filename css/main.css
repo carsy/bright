@@ -240,7 +240,7 @@ section#what > .dummy-background-3 {
   border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
   background-image: url(../img/what-item1-2.png);
   background-repeat: no-repeat;
-  background-position: 60%; }
+  background-position: 70%; }
 section#what .expanded-content {
   position: relative;
   z-index: 0;
@@ -264,7 +264,7 @@ section#what .expanded-content {
     font-weight: bold;
     letter-spacing: 1px;
     padding-left: 8px;
-    padding-right: 50%;
+    /*padding-right: 50%;*/
     line-height: 50px; }
   section#what .expanded-content hr {
     background-color: #f46783;
@@ -524,20 +524,27 @@ section#partners {
 #contacts {
   position: relative; }
   #contacts #contacts_header .dummy-background-1, #contacts #contacts_header .dummy-background-2 {
-    background: #f46d57; }
+    background: #f46d57;
+    z-index: 0; }
   #contacts > .dummy-background-1 {
     position: relative;
-    background: #f46d57; }
+    background: #f46d57;
+    z-index: 0; }
+    #contacts > .dummy-background-1 .grid-container {
+      padding: 50px 0px; }
     #contacts > .dummy-background-1 .content-info {
-      padding: 50px 20px 50px 20px;
+      padding: 0px 20px;
       color: white;
       font-size: 12px; }
       #contacts > .dummy-background-1 .content-info span {
         padding-bottom: 8px;
         display: block; }
+    #contacts > .dummy-background-1 .content-map {
+      height: 400px; }
   #contacts > .dummy-background-2 {
     position: relative;
-    background: white; }
+    background: white;
+    z-index: 0; }
     #contacts > .dummy-background-2 .section-content {
       background-color: white;
       background-image: url("../img/contacts-background.png");

@@ -343,7 +343,7 @@ section#what {
 
 		background-image: url(../img/what-item1-2.png);
 		background-repeat: no-repeat;
-		background-position: 60%; 
+		background-position: 70%; 
 	}
 
 	.expanded-content {
@@ -362,7 +362,6 @@ section#what {
 			-moz-border-image:  url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
 			-o-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
 			border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-
 		}
 
 		span {
@@ -383,7 +382,7 @@ section#what {
 
 			letter-spacing: 1px;
 			padding-left: 8px;
-			padding-right: 50%;
+			/*padding-right: 50%;*/
 			line-height: 50px;
 		}
 
@@ -823,15 +822,22 @@ section#partners {
 	#contacts_header {
 		.dummy-background-1, .dummy-background-2 {
 			background: $red1;
+
+			z-index: 0;
 		}
 	}
 
 	& > .dummy-background-1 {
 		position: relative;
 		background: $red1;
+		z-index: 0;
+
+		.grid-container {
+			padding: 50px 0px;
+		}
 
 		.content-info {
-			padding: 50px 20px 50px 20px;
+			padding: 0px 20px;
 
 			color: white;
 			font-size: 12px;
@@ -842,11 +848,16 @@ section#partners {
 				display: block;
 			}
 		}
+
+		.content-map {
+			height: 400px;
+		}
 	}
 
 	& > .dummy-background-2 {
 		position: relative;
 		background: white;
+		z-index: 0;
 
 		.section-content {
 			background-color: white;
