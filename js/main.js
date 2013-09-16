@@ -133,7 +133,7 @@ $(document).ready(function() {
 	});
 
 	var map;
-	var center = new google.maps.LatLng(41.1629652, -8.649747100000013);
+	var center = new google.maps.LatLng(41.1493783, -8.606509599999981);
 
 	function initialize() {
 		var mapOptions = {
