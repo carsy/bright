@@ -156,7 +156,7 @@ $(document).ready(function() {
 
 	google.maps.event.addDomListener(window, 'load', initialize);
 
-	$('.content-map').click(function() {
+	$('.content-map').mousedown(function() {
 		$(this).css({opacity: 1})
 		map.setOptions({scrollwheel: true});
 	}).mouseleave(function() {
