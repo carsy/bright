@@ -143,7 +143,7 @@ $(document).ready(function() {
 		};
 		map = new google.maps.Map($('.content-map')[0], mapOptions);
 
-		map.setOptions({draggable: false, zoomControl: false, scrollwheel: false, disableDoubleClickZoom: true});
+		map.setOptions({scrollwheel: false});
 
 		new google.maps.Marker({
 			map: map,
@@ -156,7 +156,7 @@ $(document).ready(function() {
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	$('.content-map').click(function() {
-		map.setOptions({draggable: true, zoomControl: true, scrollwheel: true, disableDoubleClickZoom: false});
+		map.setOptions({scrollwheel: true});
 	});
 
 	/*

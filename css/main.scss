@@ -818,7 +818,6 @@ section#partners {
 #contacts {
 	position: relative;
 
-
 	#contacts_header {
 		.dummy-background-1, .dummy-background-2 {
 			background: $red1;
@@ -833,12 +832,10 @@ section#partners {
 		z-index: 0;
 
 		.grid-container {
-			padding: 50px 0px;
+			padding: 50px 20px;
 		}
 
 		.content-info {
-			padding: 0px 20px;
-
 			color: white;
 			font-size: 12px;
 

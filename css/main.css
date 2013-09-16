@@ -531,9 +531,8 @@ section#partners {
     background: #f46d57;
     z-index: 0; }
     #contacts > .dummy-background-1 .grid-container {
-      padding: 50px 0px; }
+      padding: 50px 20px; }
     #contacts > .dummy-background-1 .content-info {
-      padding: 0px 20px;
       color: white;
       font-size: 12px; }
       #contacts > .dummy-background-1 .content-info span {
