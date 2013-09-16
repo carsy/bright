@@ -141,6 +141,7 @@ $(document).ready(function() {
 			center: center,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 		};
+		$('.content-map').css({opacity: 0.8})
 		map = new google.maps.Map($('.content-map')[0], mapOptions);
 
 		map.setOptions({scrollwheel: false});
@@ -156,8 +157,10 @@ $(document).ready(function() {
 	google.maps.event.addDomListener(window, 'load', initialize);
 
 	$('.content-map').click(function() {
+		$(this).css({opacity: 1})
 		map.setOptions({scrollwheel: true});
 	}).mouseleave(function() {
+		$(this).css({opacity: 0.8})
 		map.setOptions({scrollwheel: false});
 	});
 
