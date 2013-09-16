@@ -157,6 +157,8 @@ $(document).ready(function() {
 
 	$('.content-map').click(function() {
 		map.setOptions({scrollwheel: true});
+	}).mouseleave(function() {
+		map.setOptions({scrollwheel: false});
 	});
 
 	/*
