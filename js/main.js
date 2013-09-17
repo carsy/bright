@@ -173,7 +173,11 @@ $(document).ready(function() {
 
 	});
 
-
+	$('body').mousedown(function(e) {
+		if( e.button == 1 )
+			return false;
+		e.preventDefault();
+	});
 
 	var map;
 	var center = new google.maps.LatLng(41.1493783, -8.606509599999981);
