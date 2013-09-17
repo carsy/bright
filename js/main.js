@@ -73,8 +73,8 @@ $(document).ready(function() {
 
 		event.preventDefault();
 	});
-	var what_section = $('#what');
 
+	var what_section = $('#what');
 	$('.expander', what_section).click(function(event) {
 		$('*').stop();
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 				$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', what_section)
 					.slideToggle('fast');
-				});
+			});
 		}
 		else {
 			$(this).children().text("+");
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
 	var news_section = $('#news');
 	$('.expander', news_section).click(function(event) {
-		$('*').stop();
+		$('*').stop(); // TO REMOVE
 		
 		$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', news_section)
 			.slideToggle('slow');
@@ -122,7 +122,7 @@ $(document).ready(function() {
 
 				$('.expanded-content[data-expanded-content="' + $(this).attr('data-expander') + '"]', news_section)
 					.slideToggle('fast')
-				});
+			});
 		}
 		else {
 			$(this).children().text("+");
@@ -131,6 +131,49 @@ $(document).ready(function() {
 		// history.replaceState(null, '', $(this).id()); // FIXME
 		event.preventDefault();
 	});
+
+	$('#who .section-content img').mouseenter(function() {
+		$(this).addClass('highlighted');
+	}).mouseleave(function() {
+		$(this).removeClass('highlighted');
+	});
+
+
+
+
+	var who_section = $('#who');
+
+	$('.selected-content[data-selected-content="1"]', who_section).slideToggle('slow');
+
+	$('.selector', who_section).click(function(event) {
+
+	
+		if( !$(this).hasClass('selected') ) {
+			$('*').stop(); // TO REMOVE
+
+			$('.selected-content[data-selected-content="' + $(this).attr('data-selector') + '"]', who_section)
+				.slideToggle('slow');
+
+			$(this).addClass('selected');
+
+			$('.selector', who_section).not($(this)).each(function() {
+				if ( !$(this).hasClass('selected') )
+					return;
+
+				!$(this).removeClass('selected');
+
+
+				$('.selected-content[data-selected-content="' + $(this).attr('data-selector') + '"]', who_section)
+					.slideToggle('fast');
+			});
+		}
+		else {
+			// $(this).removeClass('selected');
+		}
+
+	});
+
+
 
 	var map;
 	var center = new google.maps.LatLng(41.1493783, -8.606509599999981);
@@ -141,20 +184,28 @@ $(document).ready(function() {
 			center: center,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 		};
-		$('.content-map').css({opacity: 0.8})
+
+		$('.content-map').css({opacity: 0.8});
 		map = new google.maps.Map($('.content-map')[0], mapOptions);
 
 		map.setOptions({scrollwheel: false});
 
-		new google.maps.Marker({
+		var marker = new google.maps.Marker({
 			map: map,
 			draggable: false,
 			animation: google.maps.Animation.DROP,
 			position: center
 		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			map.setZoom(15);
+			map.setCenter(marker.getPosition());
+		});
+
 	}
 
 	google.maps.event.addDomListener(window, 'load', initialize);
+
 
 	$('.content-map').mousedown(function() {
 		$(this).css({opacity: 1})

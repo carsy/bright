@@ -561,6 +561,10 @@ section#who {
 		background: white;
 	}
 
+	.selected-content {
+		display: none;
+	}
+
 	.section-content {
 
 		.content-list {
@@ -571,21 +575,39 @@ section#who {
 				width: auto;
 				max-height: 200px;
 				margin: auto;
+				-webkit-user-drag: none;
+				user-drag: none;
 
-				&:hover {
+				&.highlighted, &.selected {
 					-webkit-filter: drop-shadow(0px 0px 35px white);
 					-moz-filter: url(../img/drop-shadows.svg#drop-shadow); /* #FIXME */
 					filter: drop-shadow(0px 0px 35px white);
 				}
+				&:hover {
+					cursor: hand;
+					cursor: pointer;
+				}
 
 			}
 		}
+
 		
 		.content-title {
-			height: 400px;  /*TO REMOVE */
+			padding: 0px 20px 50px 20px;
 
-			.dummy-background {
-				background-color: white;
+			.list-item {
+
+				color: #575757;
+				font-size: 12px;
+				padding-top: 30px;
+			}
+
+			.list-item:first-child {
+				h2 {
+					font-size: 26px;
+				}
+				color: $blue2;
+				padding-top: 0px;
 			}
 		}
 	}
