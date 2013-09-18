@@ -108,7 +108,7 @@ a {
 }
 
 /* dimensions */
-$max-width: 1024px;
+$max-width: 800px;
 $pad-correction: 20px;
 
 /* colors */
@@ -238,7 +238,7 @@ section#home {
  					/* refactor font-size and border-width */
 					border-width: 0px 0px 8px 0px;
 					border-style: solid;
-					padding: 0px 8px;
+					/*padding: 0px 8px;*/
 					
 				}
 
@@ -247,7 +247,7 @@ section#home {
 				}
 
 				a[href='#who']:hover {
-					@include fancy_underline('who');
+					/*@include fancy_underline('who');*/
 				}
 
 				a[href='#news']:hover {
@@ -369,7 +369,7 @@ section#what {
 		}
 
 		.item-container {
-			padding: 50px 600px 50px 20px;
+			padding: 50px 55% 50px 20px;
 
 
 		}
@@ -395,6 +395,7 @@ section#what {
 
 		.item-content {
 			color: #575757;
+			font-size: 14px;
 		}
 	}
 
@@ -832,6 +833,12 @@ section#partners {
 				}
 				.item-content {
 					font-size: 12px;
+
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
 				}
 			}
 		}
