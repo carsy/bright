@@ -747,6 +747,7 @@ section#news {
 
 section#partners {
 	position: relative;
+	margin-bottom: -7px;
 
 	#partners_header {
 		.dummy-background-1, .dummy-background-2 {
@@ -841,6 +842,16 @@ section#partners {
 	position: relative;
 
 	#contacts_header {
+		
+		border-style: solid;
+		border-width: 7px 0px 0px;
+
+		-webkit-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+		-moz-border-image:  url(../img/wave-red2.png) 7 0 0 fill repeat;
+		-o-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+		border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+
+
 		.dummy-background-1, .dummy-background-2 {
 			background: $red1;
 
@@ -850,8 +861,16 @@ section#partners {
 
 	& > .dummy-background-1 {
 		position: relative;
-		background: $red1;
-		z-index: 0;
+		z-index: 1;
+
+
+		border-style: solid;
+		border-width: 0px 0px 7px;
+
+		-webkit-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
+		-moz-border-image:  url(../img/wave-red.png) 0 0 7 fill repeat;
+		-o-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
+		border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
 
 		.grid-container {
 			padding: 50px 20px;
@@ -877,6 +896,8 @@ section#partners {
 		position: relative;
 		background: white;
 		z-index: 0;
+
+		margin-top: -7px;
 
 		.section-content {
 			background-color: white;

@@ -143,7 +143,7 @@ $(document).ready(function() {
 
 	var who_section = $('#who');
 
-	$('.selected-content[data-selected-content="1"]', who_section).slideToggle('slow');
+	$('.selected-content[data-selected-content="1"]', who_section).show();
 
 	$('.selector', who_section).click(function(event) {
 

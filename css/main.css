@@ -485,7 +485,8 @@ section#news > .dummy-background-2 {
       font-size: 14px; }
 
 section#partners {
-  position: relative; }
+  position: relative;
+  margin-bottom: -7px; }
   section#partners #partners_header .dummy-background-1, section#partners #partners_header .dummy-background-2 {
     background: #7b7979; }
   section#partners > .dummy-background-1 {
@@ -536,13 +537,25 @@ section#partners {
 
 #contacts {
   position: relative; }
-  #contacts #contacts_header .dummy-background-1, #contacts #contacts_header .dummy-background-2 {
-    background: #f46d57;
-    z-index: 0; }
+  #contacts #contacts_header {
+    border-style: solid;
+    border-width: 7px 0px 0px;
+    -webkit-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+    -moz-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+    -o-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
+    border-image: url(../img/wave-red2.png) 7 0 0 fill repeat; }
+    #contacts #contacts_header .dummy-background-1, #contacts #contacts_header .dummy-background-2 {
+      background: #f46d57;
+      z-index: 0; }
   #contacts > .dummy-background-1 {
     position: relative;
-    background: #f46d57;
-    z-index: 0; }
+    z-index: 1;
+    border-style: solid;
+    border-width: 0px 0px 7px;
+    -webkit-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
+    -moz-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
+    -o-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
+    border-image: url(../img/wave-red.png) 0 0 7 fill repeat; }
     #contacts > .dummy-background-1 .grid-container {
       padding: 50px 20px; }
     #contacts > .dummy-background-1 .content-info {
@@ -556,7 +569,8 @@ section#partners {
   #contacts > .dummy-background-2 {
     position: relative;
     background: white;
-    z-index: 0; }
+    z-index: 0;
+    margin-top: -7px; }
     #contacts > .dummy-background-2 .section-content {
       background-color: white;
       background-image: url("../img/contacts-background.png");
