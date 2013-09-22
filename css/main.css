@@ -79,6 +79,10 @@ textarea {
   font-family: Akkurat;
   src: url("../fonts/akkurat/Akkurat.otf"); }
 
+@font-face {
+  font-family: Bloo;
+  src: url("../fonts/bloo/blooone.otf"); }
+
 * {
   font-family: Akkurat; }
 
@@ -131,21 +135,18 @@ section#home {
   section#home .section-header {
     margin: auto; }
     section#home .section-header .header-logo {
-      float: left;
-      -webkit-transform: scale(1, 1.5);
-      -moz-transform: scale(1, 1.5);
-      -ms-transform: scale(1, 1.5);
-      -o-transform: scale(1, 1.5);
-      transform: scale(1, 1.5);
-      font-size: 24px;
-      font-weight: bold; }
+      float: left; }
       section#home .section-header .header-logo a {
+        font-family: Bloo !important;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 4px;
         margin: 0;
         padding: 0; }
     section#home .section-header .header-nav {
       display: inline-block;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
       height: 100%;
       padding-top: 6px;
