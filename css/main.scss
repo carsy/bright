@@ -170,8 +170,6 @@ $red2: #ff0000;
 /* ### HOME ### */
 section#home {
 	width: 100%;
-	margin-bottom: -6px;
-
 
 	#home_header {
 		position: fixed;
@@ -231,39 +229,15 @@ section#home {
 
 				vertical-align: middle;
 
-				@mixin fancy_underline($link) {
-					-webkit-border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
-					-moz-border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
-					border-image: url('../img/' + $link + '_underline.svg') 0 0 8 fill repeat;
+				a:hover {
+					-webkit-border-image: url('../img/underline.svg') 0 0 8 fill repeat;
+					-moz-border-image: url('../img/underline.svg') 0 0 8 fill repeat;
+					border-image: url('../img/underline.svg') 0 0 8 fill repeat;
 
  					/* refactor font-size and border-width */
 					border-width: 0px 0px 8px 0px;
 					border-style: solid;
-					/*padding: 0px 8px;*/
-					
 				}
-
-				a[href='#what']:hover {
-					@include fancy_underline('what');
-				}
-
-				a[href='#who']:hover {
-					/*@include fancy_underline('who');*/
-				}
-
-				a[href='#news']:hover {
-					@include fancy_underline('news');
-				}
-
-				a[href='#partners']:hover {
-					@include fancy_underline('partners');
-				}
-
-				a[href='#contacts']:hover {
-					@include fancy_underline('contacts');
-				}
-
-				
 			}
 		}
 	}
@@ -284,15 +258,6 @@ section#what {
 
 	#what_header.dummy-separator {
 		position: relative;
-
-		border-style: solid;
-		border-width: 7px 0px 0px;
-
-		-webkit-border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
-		-moz-border-image:  url(../img/triangle-orange.png) 7 0 0 fill repeat;
-		-o-border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
-		border-image: url(../img/triangle-orange.png) 7 0 0 fill repeat;
-
 
 		.dummy-background-1 {
 			height: 50%;
@@ -334,13 +299,6 @@ section#what {
 		background: transparent;
 
 		z-index: 1;
-		border-style: solid;
-		border-width: 7px 0px 0px 0px;
-
-		-webkit-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-		-moz-border-image:  url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-		-o-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-		border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
 
 		background-image: url(../img/what-item1-2.png);
 		background-repeat: no-repeat;
@@ -356,13 +314,6 @@ section#what {
 
 		.dummy-background {
 			z-index: 2;
-			border-style: solid;
-			border-width: 7px 0px 0px 0px;
-
-			-webkit-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-			-moz-border-image:  url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-			-o-border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
-			border-image: url(../img/triangle-gray.png) 7 0 0 0 fill repeat;
 		}
 
 		span {
@@ -371,8 +322,6 @@ section#what {
 
 		.item-container {
 			padding: 50px 55% 50px 20px;
-
-
 		}
 
 		.item-header {
@@ -383,7 +332,6 @@ section#what {
 
 			letter-spacing: 1px;
 			padding-left: 8px;
-			/*padding-right: 50%;*/
 			line-height: 50px;
 		}
 
@@ -489,7 +437,6 @@ section#what {
 				}
 			}
 
-
 			img {
 				width: auto;
 				max-height: 150px;
@@ -542,8 +489,6 @@ section#what {
 section#who {
 	position: relative;
 	z-index: 1;
-
-	margin-top: -6px;
 
 	#who_header {
 		position: relative;
@@ -749,7 +694,6 @@ section#news {
 
 section#partners {
 	position: relative;
-	margin-bottom: -7px;
 
 	#partners_header {
 		.dummy-background-1, .dummy-background-2 {
@@ -850,15 +794,6 @@ section#partners {
 	position: relative;
 
 	#contacts_header {
-		
-		border-style: solid;
-		border-width: 7px 0px 0px;
-
-		-webkit-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
-		-moz-border-image:  url(../img/wave-red2.png) 7 0 0 fill repeat;
-		-o-border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
-		border-image: url(../img/wave-red2.png) 7 0 0 fill repeat;
-
 
 		.dummy-background-1, .dummy-background-2 {
 			background: $red1;
@@ -870,15 +805,6 @@ section#partners {
 	& > .dummy-background-1 {
 		position: relative;
 		z-index: 1;
-
-
-		border-style: solid;
-		border-width: 0px 0px 7px;
-
-		-webkit-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
-		-moz-border-image:  url(../img/wave-red.png) 0 0 7 fill repeat;
-		-o-border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
-		border-image: url(../img/wave-red.png) 0 0 7 fill repeat;
 
 		.grid-container {
 			padding: 50px 20px;

@@ -5,5 +5,5 @@ python -m SimpleHTTPServer &
 sass --watch css/main.scss:css/main.css &
 google-chrome --incognito http://carsy-laptop:8000  &
 firefox --private http://carsy-laptop:8000  &
-gnome-open ~/Dropbox/bright/1.1sitebright_03.pdf &
+gnome-open ~/Dropbox/bright/website\ bright.pdf &
 
