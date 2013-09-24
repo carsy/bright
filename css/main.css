@@ -161,9 +161,12 @@ section#home {
           /* refactor font-size and border-width */
           border-width: 0px 0px 8px 0px;
           border-style: solid; }
-  section#home .section-content img#front-cover {
-    max-width: 100%;
-    margin-top: 80px; }
+  section#home > .dummy-background-1 {
+    position: relative;
+    height: 100%; }
+    section#home > .dummy-background-1 img#front-cover {
+      width: 100%;
+      margin-top: 80px; }
 
 /* ### WHAT ### */
 section#what #what_header.dummy-separator {

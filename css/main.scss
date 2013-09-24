@@ -242,15 +242,16 @@ section#home {
 		}
 	}
 
-	.section-content {
+	& > .dummy-background-1 {
+		position: relative;
+		height: 100%;
+
 		img#front-cover {
-			max-width: 100%;
+			width: 100%;
 			margin-top: 80px;
+
 		}
-
-
 	}
-
 }
 
 /* ### WHAT ### */
