@@ -122,10 +122,10 @@ section#home {
     width: 100%;
     z-index: 2; }
     section#home #home_header .dummy-background-1 {
-      background: #404040;
+      background: #424242;
       height: 50%; }
     section#home #home_header .dummy-background-2 {
-      background: #333333;
+      background: #515151;
       height: 50%;
       top: 50%; }
     section#home #home_header .header-logo, section#home #home_header .header-nav {
@@ -174,11 +174,11 @@ section#what #what_header.dummy-separator {
   section#what #what_header.dummy-separator .dummy-background-1 {
     height: 50%;
     top: 0;
-    background: #ffa600; }
+    background: #fcb525; }
   section#what #what_header.dummy-separator .dummy-background-2 {
     height: 50%;
     top: 50%;
-    background: #ffb600; }
+    background: #ffc324; }
 section#what > .dummy-background-1 {
   position: relative;
   z-index: 0; }
@@ -186,7 +186,7 @@ section#what > .dummy-background-1 {
     position: absolute;
     width: 50%;
     left: 50%;
-    background: #ffb600; }
+    background: #ffc324; }
 section#what > .dummy-background-2 {
   position: relative;
   background: #4c4c4c;
@@ -196,7 +196,7 @@ section#what > .dummy-background-3 {
   position: relative;
   background: transparent;
   z-index: 1;
-  background-image: url(../img/what-item1-2.png);
+  background-image: url(../img/what-item1-3.png);
   background-repeat: no-repeat;
   background-position: 70%; }
 section#what .expanded-content {
@@ -228,7 +228,7 @@ section#what .expanded-content {
 section#what .section-content {
   z-index: 2; }
   section#what .section-content .content-title {
-    background: #ffb600;
+    background: #ffc324;
     position: relative; }
     section#what .section-content .content-title div.content-left {
       background: white;
@@ -243,12 +243,12 @@ section#what .section-content {
       overflow: hidden; }
       section#what .section-content .content-title div.content-left h1 {
         line-height: 1em;
-        color: #ffa600;
+        color: #fcb525;
         margin: 0;
         overflow: hidden; }
       section#what .section-content .content-title div.content-left hr {
         height: 3px;
-        background-color: #ffb600;
+        background-color: #ffc324;
         border: 0;
         width: 55%;
         margin: 20px 0px; }
@@ -266,7 +266,7 @@ section#what .section-content {
       z-index: 1; }
       section#what .section-content .content-title div.content-right .dummy-background {
         top: 0;
-        background: #ffb600;
+        background: #ffc324;
         -webkit-border-radius: 0px 0px 0px 100px;
         -moz-border-radius: 0px 0px 0px 100px;
         border-radius: 0px 0px 0px 100px; }
@@ -320,7 +320,8 @@ section#who {
   z-index: 1; }
   section#who #who_header {
     position: relative; }
-    section#who #who_header .dummy-background-1, section#who #who_header .dummy-background-2 {
+    section#who #who_header .dummy-background-1,
+    section#who #who_header .dummy-background-2 {
       background: #66ccc6; }
   section#who > .dummy-background-1 {
     position: relative;
