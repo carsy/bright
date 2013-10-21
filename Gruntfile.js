@@ -13,8 +13,8 @@ module.exports = function (grunt) {
       scripts: 'scripts',
       images: 'images',
       fonts: 'fonts',
-      css: 'css',
-      sass: 'css'
+      css: 'styles/css',
+      scss: 'styles/scss'
     },
     // Task configuration.
     jshint: {
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
     },
     compass: {
       options: {
-        sassDir: '<%= app.sass %>',
+        sassDir: '<%= app.scss %>',
         cssDir: '<%= app.css %>',
         imagesDir: '<%= app.images %>',
         javascriptDir: '<%= app.scripts %>',
@@ -102,7 +102,6 @@ module.exports = function (grunt) {
       }
     }
   });
-
 
   grunt.registerTask('server', function () {
     grunt.task.run([
