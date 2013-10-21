@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     // configurable paths
     app: {
-      js: 'js',
+      scripts: 'scripts',
       images: 'img',
       fonts: 'fonts',
       css: 'css',
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
         files: [
           'index.html',
           '<%= app.css %>/*.css',
-          '<%= app.js %>/*.js',
+          '<%= app.scripts %>/*.js',
           '<%= app.images %>/*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
         sassDir: '<%= app.sass %>',
         cssDir: '<%= app.css %>',
         imagesDir: '<%= app.images %>',
-        javascriptDir: '<%= app.js %>',
+        javascriptDir: '<%= app.scripts %>',
         fontsDir: '<%= app.fonts %>'
       },
       server: {
