@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     // configurable paths
     app: {
       scripts: 'scripts',
-      images: 'img',
+      images: 'images',
       fonts: 'fonts',
       css: 'css',
       sass: 'css'

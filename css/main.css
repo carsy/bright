@@ -206,9 +206,9 @@ section#home .section-header .header-nav span {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/css\/main\.scss}line{font-family:\00003232}}
 section#home .section-header .header-nav span a:hover {
-  -webkit-border-image: url("../img/underline.svg") 0 0 8 fill repeat;
-  -moz-border-image: url("../img/underline.svg") 0 0 8 fill repeat;
-  border-image: url("../img/underline.svg") 0 0 8 fill repeat;
+  -webkit-border-image: url("../images/underline.svg") 0 0 8 fill repeat;
+  -moz-border-image: url("../images/underline.svg") 0 0 8 fill repeat;
+  border-image: url("../images/underline.svg") 0 0 8 fill repeat;
   /* refactor font-size and border-width */
   border-width: 0px 0px 8px 0px;
   border-style: solid;
@@ -265,7 +265,7 @@ section#what > .dummy-background-3 {
   position: relative;
   background: transparent;
   z-index: 1;
-  background-image: url(../img/what-item1-2.png);
+  background-image: url(../images/what-item1-2.png);
   background-repeat: no-repeat;
   background-position: 70%;
 }
@@ -482,7 +482,7 @@ section#who .section-content .content-list img {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/css\/main\.scss}line{font-family:\00003530}}
 section#who .section-content .content-list img.highlighted, section#who .section-content .content-list img.selected {
   -webkit-filter: drop-shadow(0px 0px 35px white);
-  -moz-filter: url(../img/drop-shadows.svg#drop-shadow);
+  -moz-filter: url(../images/drop-shadows.svg#drop-shadow);
   /* #FIXME */
   filter: drop-shadow(0px 0px 35px white);
 }
@@ -758,7 +758,7 @@ section#partners .section-content#clients_content .content-list .list-item img {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/css\/main\.scss}line{font-family:\00003838}}
 #contacts > .dummy-background-2 .section-content {
   background-color: white;
-  background-image: url("../img/contacts-background.png");
+  background-image: url("../images/contacts-background.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }

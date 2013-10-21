@@ -230,9 +230,9 @@ section#home {
 				vertical-align: middle;
 
 				a:hover {
-					-webkit-border-image: url('../img/underline.svg') 0 0 8 fill repeat;
-					-moz-border-image: url('../img/underline.svg') 0 0 8 fill repeat;
-					border-image: url('../img/underline.svg') 0 0 8 fill repeat;
+					-webkit-border-image: url('../images/underline.svg') 0 0 8 fill repeat;
+					-moz-border-image: url('../images/underline.svg') 0 0 8 fill repeat;
+					border-image: url('../images/underline.svg') 0 0 8 fill repeat;
 
  					/* refactor font-size and border-width */
 					border-width: 0px 0px 8px 0px;
@@ -301,7 +301,7 @@ section#what {
 
 		z-index: 1;
 
-		background-image: url(../img/what-item1-2.png);
+		background-image: url(../images/what-item1-2.png);
 		background-repeat: no-repeat;
 		background-position: 70%; 
 	}
@@ -529,7 +529,7 @@ section#who {
 
 				&.highlighted, &.selected {
 					-webkit-filter: drop-shadow(0px 0px 35px white);
-					-moz-filter: url(../img/drop-shadows.svg#drop-shadow); /* #FIXME */
+					-moz-filter: url(../images/drop-shadows.svg#drop-shadow); /* #FIXME */
 					filter: drop-shadow(0px 0px 35px white);
 				}
 				&:hover {
@@ -837,7 +837,7 @@ section#partners {
 
 		.section-content {
 			background-color: white;
-			background-image: url('../img/contacts-background.png');
+			background-image: url('../images/contacts-background.png');
 			background-repeat: no-repeat;
 			background-position: right bottom;
 		}
