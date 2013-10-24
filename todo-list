@@ -19,6 +19,9 @@
 
 ### Techs  ###
 
+ others:
+   [-] add gmaps key on first build: AIzaSyCjIm2R2d0-ZaBSQ5Qnul3TwSW6t7Sn6JY
+
  img:
    [x] convert front cover to jpeg
    [?] draw the images with css
@@ -32,6 +35,7 @@
 
  js:
    [x] transition of sections: stop current animation if another link is clicked (i.e. another animation should start)
+   [x] ! refactor expander in what, news ans who section
 
  responsive-design:
    [x] basic tablets and phones i guess
