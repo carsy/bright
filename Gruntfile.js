@@ -1,4 +1,6 @@
 /*global module:false*/
+/*global require:false*/
+
 module.exports = function (grunt) {
 
   // show elapsed time at the end
@@ -36,8 +38,8 @@ module.exports = function (grunt) {
         }
       },
       all: [
-        'Gruntfile.js'
-        // '<%= app.js %>/*.js'
+        'Gruntfile.js',
+        '<%= app.js %>/*.js'
       ],
       gruntfile: {
         src: 'Gruntfile.js'
@@ -99,6 +101,25 @@ module.exports = function (grunt) {
     autoprefixer: {
       options: {
         browsers: ['last 1 version']
+      }
+    },
+    requirejs: {
+      compile: {
+
+        options: {
+          appDir: 'scripts/',
+          baseUrl: '.',
+          // dir: 'target/',
+          // optimize: 'uglify',
+          mainConfigFile: './src/main.js',
+          modules: [{
+            name: 'MyModule'
+          }],
+          logLevel: 0,
+          findNestedDependencies: true,
+          fileExclusionRegExp: /^\./,
+          inlineText: true
+        }
       }
     }
   });

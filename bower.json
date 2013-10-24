@@ -1,0 +1,9 @@
+{
+  "name": "Bright Website",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": null,
+    "requirejs": null,
+    "requirejs-plugins": "~1.0.2"
+  }
+}
