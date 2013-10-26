@@ -4,6 +4,9 @@ define('what-section', ['jquery'], function ($) {
 	'use strict';
 
 	var section = {
+		render: function (callback) {
+			$('#what').load('../../views/what_section.html', callback);
+		},
 		load: function () {
 
 			var what_section = $('#what');

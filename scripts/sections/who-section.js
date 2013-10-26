@@ -4,6 +4,9 @@ define('who-section', ['jquery'], function ($) {
 	'use strict';
 
 	var section = {
+		render: function (callback) {
+			$('#who').load('../../views/who_section.html', callback);
+		},
 		load: function () {
 			$('#who .section-content img').mouseenter(function () {
 				$(this).addClass('highlighted');

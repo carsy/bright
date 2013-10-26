@@ -1,14 +1,16 @@
 /* global define:false */
 
-define('app', ['header', 'what-section', 'who-section', 'news-section', 'contacts-section'],
-  function (header, what_section, who_section, news_section, contacts_section) {
-    'use strict';
+define('app', ['header', 'what-section', 'who-section', 'news-section', 'partners-section', 'contacts-section'],
+	function (header, what_section, who_section, news_section, partners_section, contacts_section) {
+		'use strict';
 
-    header.load();
-    what_section.load();
-    who_section.load();
-    news_section.load();
-    contacts_section.load();
+		what_section.render(what_section.load);
+		who_section.render(who_section.load);
+		news_section.render(news_section.load);
+		partners_section.render();
+		contacts_section.render(contacts_section.load);
 
-    return 'B R I G H T';
-  });
+		header.render(header.load);
+
+		return 'B R I G H T';
+	});
