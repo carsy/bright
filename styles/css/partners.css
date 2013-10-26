@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Akkurat;
+  src: url("../../fonts/akkurat/Akkurat.otf");
+}
+
+@font-face {
+  font-family: Bloo;
+  src: url("../../fonts/bloo/blooone.otf");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000311}}
+* {
+  font-family: Akkurat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000315}}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* dimensions */
+/* colors */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000349}}
+.section-header {
+  max-width: 800px;
+  margin: auto;
+  height: 30px;
+  width: 760px;
+  padding: 25px 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000356}}
+.section-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000364}}
+.dummy-background,
+.dummy-background-1,
+.dummy-background-2,
+.dummy-background-3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\000033}}
+#partners {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\000037}}
+#partners #partners_header .dummy-background-1, #partners #partners_header .dummy-background-2 {
+  background: #7b7979;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000312}}
+#partners > .dummy-background-1 {
+  position: relative;
+  background: #7b7979;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000317}}
+#partners > .dummy-background-2 {
+  position: relative;
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000324}}
+#partners .section-content#partners_content .content-list {
+  padding: 20px 20px 50px 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000327}}
+#partners .section-content#partners_content .content-list .list-item {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000327}}
+  #partners .section-content#partners_content .content-list .list-item {
+    padding-bottom: 50px;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000334}}
+#partners .section-content#partners_content .content-list .list-item span {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000338}}
+#partners .section-content#partners_content .content-list .list-item .item-img {
+  height: 160px;
+  width: 160px;
+  background-color: white;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000352}}
+#partners .section-content#partners_content .content-list .list-item .item-header {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000360}}
+#partners .section-content#partners_content .content-list .list-item .item-content {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000366}}
+#partners .section-content#partners_content .content-list .list-item .item-link {
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000375}}
+#partners .section-content#clients_content .content-list {
+  padding: 50px 20px 50px 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000379}}
+#partners .section-content#clients_content .content-list .list-item .item-header {
+  display: block;
+  padding-bottom: 10px;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000387}}
+#partners .section-content#clients_content .content-list .list-item .item-content {
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/partners\.scss}line{font-family:\0000392}}
+#partners .section-content#clients_content .content-list .list-item img {
+  max-width: 100%;
+  height: auto;
+}

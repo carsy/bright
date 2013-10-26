@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Akkurat;
+	src: url("../../fonts/akkurat/Akkurat.otf");
+}
+
+@font-face {
+	font-family: Bloo;
+	src: url("../../fonts/bloo/blooone.otf");
+}
+
+* {
+	font-family: Akkurat;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* dimensions */
+$max-width: 800px;
+$pad-correction: 20px;
+
+/* colors */
+$gray1: #515151;
+$gray2: #424242;
+
+$orange1: #fcb525;
+$orange2: #ffc324;
+
+$blue1: #66ccc6;
+$blue2: #3abebe;
+
+$green1: #40bb6a;
+$green2: #78ce7e;
+
+$gray3: #7b7979;
+
+$red1: #f46d57;
+$red2: #ff0000;
+
+
+@mixin content-center {
+	max-width: $max-width;
+	margin: auto;
+}
+
+
+.section-header {
+	@include content-center;
+	height: 30px;
+	width: $max-width - 2 * $pad-correction;
+	padding: 25px $pad-correction;
+}
+
+.section-content {
+	@include content-center;
+
+}
+
+.dummy-background, 
+.dummy-background-1, 
+.dummy-background-2,
+.dummy-background-3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}

@@ -1,0 +1,132 @@
+@import 'app';
+
+#news {
+	#news_header {
+		position: relative;
+
+		.dummy-background-1, .dummy-background-2 {
+			background: $green1;
+		}
+	}
+
+	& > .dummy-background-1 {
+		background: white;
+		position: relative;
+		z-index: 0;
+
+		.section-content {
+			background: white;
+			z-index: 2;
+
+			.content-title {
+				padding: 35px 20px 50px 20px;
+
+				 span {
+				 	display: block;
+				 	font-size: 12px;
+				 }
+
+				 .list-item  {
+				 	@media only screen and (max-width: 600px) {
+				 		padding-bottom: 30px;
+				 	}
+				 }
+
+				.item-header {
+					color: $green1;
+					font-weight: bolder;
+					font-size: 18px;
+					line-height: 18px;
+				}
+
+				.item-date {
+					font-weight: bold;
+					margin-top: 5px;
+				}
+
+				.item-source {
+					margin-bottom: 5px;
+				}
+
+
+				.expander {
+					-webkit-transform: rotate(90deg);
+					-moz-transform: rotate(90deg);
+					-ms-transform: rotate(90deg);
+					-o-transform: rotate(90deg);
+					transform: rotate(90deg);
+					filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+
+					height: 20px;
+					width: 20px;
+					padding-top: 10px;
+					
+					&:hover {
+						cursor: pointer;
+						cursor: hand;
+					}
+
+					a {
+						outline: none;
+						color: $green1;
+						font-weight: bolder;
+					}
+				}
+			}
+
+		}
+	}
+
+	& > .dummy-background-2 {
+		position: relative;
+		z-index: 1;
+
+		.expanded-content {
+			position: relative;
+			z-index: 2;
+			background: $green2;
+
+			display: none;
+
+			color: white;
+
+			.header-container {
+				float: left;
+
+				span {
+					display: block;
+				}
+			}
+
+			span {
+				display: inline-block;
+			}
+
+			.item-container {
+				padding: 50px 60px 50px 20px;
+			}
+
+			.item-header {
+
+				font-size: 20px;
+				font-weight: bold;
+
+				letter-spacing: 1px;
+
+			}
+
+			.content-container {
+				-webkit-column-gap: 10px;
+				-moz-column-gap: 10px;
+				column-gap: 10px;
+
+				-webkit-column-count: 2;
+				-moz-column-count: 2;
+				column-count: 2;
+
+				font-size: 14px;
+			}
+
+		}
+	}
+}

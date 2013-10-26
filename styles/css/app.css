@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Akkurat;
+  src: url("../../fonts/akkurat/Akkurat.otf");
+}
+
+@font-face {
+  font-family: Bloo;
+  src: url("../../fonts/bloo/blooone.otf");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000311}}
+* {
+  font-family: Akkurat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000315}}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* dimensions */
+/* colors */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000349}}
+.section-header {
+  max-width: 800px;
+  margin: auto;
+  height: 30px;
+  width: 760px;
+  padding: 25px 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000356}}
+.section-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000364}}
+.dummy-background,
+.dummy-background-1,
+.dummy-background-2,
+.dummy-background-3 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}

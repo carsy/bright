@@ -31,7 +31,7 @@
    [x] section's separations with row of triangles
    [x] firefox bug: continuation of background colors left and right of the screen
    [-] refactor 20px left and right padding on content and headers
-   [-] highlight/underline header's links
+   [x] highlight/underline header's links
 
  js:
    [x] transition of sections: stop current animation if another link is clicked (i.e. another animation should start)

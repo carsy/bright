@@ -1,0 +1,70 @@
+@import 'app';
+
+#contacts {
+	position: relative;
+
+	#contacts_header {
+
+		.dummy-background-1, .dummy-background-2 {
+			background: $red1;
+
+			z-index: 0;
+		}
+	}
+
+	& > .dummy-background-1 {
+		position: relative;
+		z-index: 1;
+
+		.grid-container {
+			padding: 50px 20px;
+		}
+
+		.content-info {
+			color: white;
+			font-size: 12px;
+
+			span {
+				padding-bottom: 8px;
+
+				display: block;
+			}
+		}
+
+		.content-map {
+			height: 400px;
+		}
+	}
+
+	& > .dummy-background-2 {
+		position: relative;
+		background: white;
+		z-index: 0;
+
+		margin-top: -7px;
+
+		.section-content {
+			background-color: white;
+			background-image: url('../../images/contacts-background.png');
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+
+		.content-container {
+			padding: 50px 20px 50px 20px;
+		}
+
+		.content-header {
+			color: $red2;
+			display: block;
+			font-size: 1.2em;
+			font-weight: bold;
+			padding-bottom: 10px;
+		}
+
+		.content {
+			font-size: 12px;
+		}
+
+	}
+}

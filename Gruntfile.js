@@ -1,7 +1,8 @@
-/*global module:false*/
-/*global require:false*/
+/* global module:false */
+/* global require:false */
 
 module.exports = function (grunt) {
+  'use strict';
 
   // show elapsed time at the end
   require('time-grunt')(grunt);
@@ -12,11 +13,12 @@ module.exports = function (grunt) {
   grunt.initConfig({
     // configurable paths
     app: {
+      views: 'views',
       scripts: 'scripts',
       images: 'images',
       fonts: 'fonts',
       css: 'styles/css',
-      scss: 'styles/scss'
+      sass: 'styles/scss'
     },
     // Task configuration.
     jshint: {
@@ -64,6 +66,7 @@ module.exports = function (grunt) {
         },
         files: [
           'index.html',
+          '<%= app.views %>/*.html',
           '<%= app.css %>/*.css',
           '<%= app.scripts %>/*.js',
           '<%= app.images %>/*.{png,jpg,jpeg,gif,webp,svg}'
@@ -86,7 +89,7 @@ module.exports = function (grunt) {
     },
     compass: {
       options: {
-        sassDir: '<%= app.scss %>',
+        sassDir: '<%= app.sass %>',
         cssDir: '<%= app.css %>',
         imagesDir: '<%= app.images %>',
         javascriptDir: '<%= app.scripts %>',

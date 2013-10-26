@@ -4,6 +4,9 @@ define('news-section', ['jquery'], function ($) {
 	'use strict';
 
 	var section = {
+		render: function (callback) {
+			$('#news').load('../../views/news_section.html', callback);
+		},
 		load: function () {
 
 			var news_section = $('#news');
