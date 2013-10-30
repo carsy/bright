@@ -1579,7 +1579,7 @@ footer .footer-content .content-list .three-dots-0o div {
 /*
  * Image replacement
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003130}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003127}}
 .ir {
   background-color: transparent;
   border: 0;
@@ -1588,7 +1588,7 @@ footer .footer-content .content-list .three-dots-0o div {
   *text-indent: -9999px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003135}}
 .ir:before {
   content: "";
   display: block;
@@ -1599,7 +1599,7 @@ footer .footer-content .content-list .three-dots-0o div {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003146}}
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -1608,7 +1608,7 @@ footer .footer-content .content-list .three-dots-0o div {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003155}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1624,7 +1624,7 @@ footer .footer-content .content-list .three-dots-0o div {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003172}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1638,7 +1638,7 @@ footer .footer-content .content-list .three-dots-0o div {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003185}}
 .invisible {
   visibility: hidden;
 }
@@ -1654,7 +1654,7 @@ footer .footer-content .content-list .three-dots-0o div {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003202}}
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1663,7 +1663,7 @@ footer .footer-content .content-list .three-dots-0o div {
   /* 2 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003207}}
 .clearfix:after {
   clear: both;
 }
@@ -1672,7 +1672,7 @@ footer .footer-content .content-list .three-dots-0o div {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003216}}
 .clearfix {
   *zoom: 1;
 }
@@ -1693,7 +1693,7 @@ footer .footer-content .content-list .three-dots-0o div {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003243}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -1702,18 +1702,18 @@ footer .footer-content .content-list .three-dots-0o div {
     text-shadow: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003251}}
   a,
   a:visited {
     text-decoration: underline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003255}}
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003262}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003259}}
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1721,33 +1721,33 @@ footer .footer-content .content-list .three-dots-0o div {
   /*
    * Don't show links for images, or javascript/internal links
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003269}}
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003274}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003282}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003279}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003284}}
   tr,
   img {
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003288}}
   img {
     max-width: 100% !important;
   }
@@ -1756,7 +1756,7 @@ footer .footer-content .content-list .three-dots-0o div {
     margin: 0.5cm;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003298}}
   p,
   h2,
   h3 {
@@ -1764,7 +1764,7 @@ footer .footer-content .content-list .three-dots-0o div {
     widows: 3;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/main\.scss}line{font-family:\00003304}}
   h2,
   h3 {
     page-break-after: avoid;
