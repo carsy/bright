@@ -115,9 +115,9 @@ module.exports = function (grunt) {
           // dir: 'target/',
           // optimize: 'uglify',
           mainConfigFile: './src/main.js',
-          modules: [{
-            name: 'MyModule'
-          }],
+          // modules: [{
+          //   name: 'MyModule'
+          // }],
           logLevel: 0,
           findNestedDependencies: true,
           fileExclusionRegExp: /^\./,
