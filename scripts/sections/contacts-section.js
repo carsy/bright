@@ -5,7 +5,7 @@ define('contacts-section', ['jquery', 'gmaps'], function ($, google) {
 
 	var section = {
 		render: function (callback) {
-			$('#contacts').load('../../views/contacts_section.html', callback);
+			$('#contacts').load('../views/contacts_section.html', callback);
 		},
 		load: function () {
 
