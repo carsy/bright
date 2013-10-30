@@ -68,7 +68,7 @@ module.exports = function (grunt) {
           'index.html',
           '<%= app.views %>/*.html',
           '<%= app.css %>/*.css',
-          '<%= app.scripts %>/*.js',
+          '<%= app.scripts %>/**/*.js',
           '<%= app.images %>/*.{png,jpg,jpeg,gif,webp,svg}'
         ]
       }
@@ -110,14 +110,14 @@ module.exports = function (grunt) {
       compile: {
 
         options: {
-          appDir: 'scripts/',
+          appDir: '.',
           baseUrl: '.',
           // dir: 'target/',
           // optimize: 'uglify',
-          mainConfigFile: './src/main.js',
-          modules: [{
-            name: 'MyModule'
-          }],
+          mainConfigFile: 'scripts/main.js',
+          // modules: [{
+          //   name: 'MyModule'
+          // }],
           logLevel: 0,
           findNestedDependencies: true,
           fileExclusionRegExp: /^\./,
