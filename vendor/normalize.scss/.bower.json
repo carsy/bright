@@ -1,0 +1,42 @@
+{
+  "name": "normalize-scss",
+  "version": "2.1.2",
+  "main": [
+    "_normalize.scss"
+  ],
+  "author": [
+    "Nicolas Gallagher",
+    "John Albin Wilkins"
+  ],
+  "ignore": [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE.md",
+    "README.md",
+    "component.json",
+    "normalize-scss.gemspec",
+    "lib/normalize-scss.rb",
+    "test.html"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    },
+    {
+      "type": "GPLv2",
+      "url": "http://www.gnu.org/licenses/gpl-2.0.html"
+    }
+  ],
+  "homepage": "https://github.com/JohnAlbin/normalize.css-with-sass-or-compass",
+  "_release": "2.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.1.2",
+    "commit": "02cce38eb057faa3464b8a28d22e964ef8689c0c"
+  },
+  "_source": "git://github.com/JohnAlbin/normalize.css-with-sass-or-compass.git",
+  "_target": "~2.1.2",
+  "_originalSource": "normalize.scss",
+  "_direct": true
+}

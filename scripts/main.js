@@ -20,5 +20,5 @@ require.config({
 require(['app'], function (app) {
 	'use strict';
 
-	console.log(app);
+	console.log('%c' + app, 'background: lightgray; color: gray');
 });
