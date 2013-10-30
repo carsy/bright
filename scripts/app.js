@@ -13,5 +13,5 @@ define('app', ['header', 'what-section', 'who-section', 'news-section', 'partner
 		header.render(header.load);
 		footer.render();
 
-		return 'B R I G H T';
+		return 'B R I G H T\nBeyond Research and Information Graphics for Health and Technology';
 	});
