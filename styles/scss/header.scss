@@ -1,0 +1,72 @@
+@import 'app';
+
+#home_header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+
+	.dummy-background-1 {
+		background: $gray2;
+		height: 50%;
+	}
+
+	.dummy-background-2 {
+		background: $gray1;
+		height: 50%;
+		top: 50%;
+	}
+
+	.header-logo, .header-nav {
+		position: relative;
+		z-index: 10;
+	}
+
+}
+
+.section-header {
+	margin: auto;
+
+	.header-logo {
+		float: left;
+
+		a {
+			font-family: Bloo !important;
+			font-size: 40px;
+			line-height: 40px;
+			letter-spacing: 4px;
+
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.header-nav {
+		display: inline-block;
+
+		font-weight: bold;
+		font-size: 12px;
+		text-align: center;
+
+		height: 100%;
+		padding-top: 6px;
+		vertical-align: middle;
+
+		span {
+
+			float: right;
+			display: inline-block;
+
+			vertical-align: middle;
+
+			a:hover {
+				-webkit-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+				-moz-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+				border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+
+					/* refactor font-size and border-width */
+				border-width: 0px 0px 8px 0px;
+				border-style: solid;
+			}
+		}
+	}
+}

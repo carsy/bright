@@ -4,11 +4,9 @@ define('header', ['jquery'], function ($) {
 	'use strict';
 
 	var header = {
-
 		render: function (callback) {
-			$('#home').load('views/home_section.html', callback);
+			$('#header').load('views/header.html', callback);
 		},
-
 		load: function () {
 			var home_header_bg1 = $('#home_header > .dummy-background-1');
 			var home_header_bg2 = $('#home_header > .dummy-background-2');

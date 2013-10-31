@@ -5,7 +5,7 @@ define('footer', ['jquery'], function ($) {
 
 	var footer = {
 		render: function () {
-			$('footer').load('views/footer.html');
+			$('#footer').load('views/footer.html');
 		}
 	};
 

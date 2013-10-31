@@ -4,6 +4,7 @@
 require.config({
 	paths: {
 		// app specific
+		'home-section': 'sections/home-section',
 		'what-section': 'sections/what-section',
 		'who-section': 'sections/who-section',
 		'news-section': 'sections/news-section',

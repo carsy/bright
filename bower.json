@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": null,
     "requirejs": null,
-    "requirejs-plugins": "~1.0.2"
+    "requirejs-plugins": "~1.0.2",
+    "normalize.scss": "~2.1.2"
   }
 }
