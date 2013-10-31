@@ -6,7 +6,7 @@ define('header', ['jquery'], function ($) {
 	var header = {
 
 		render: function (callback) {
-			$('#home').load('../views/home_section.html', callback);
+			$('#home').load('views/home_section.html', callback);
 		},
 
 		load: function () {

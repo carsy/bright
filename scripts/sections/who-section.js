@@ -5,7 +5,7 @@ define('who-section', ['jquery'], function ($) {
 
 	var section = {
 		render: function (callback) {
-			$('#who').load('../views/who_section.html', callback);
+			$('#who').load('views/who_section.html', callback);
 		},
 		load: function () {
 			$('#who .section-content img').mouseenter(function () {

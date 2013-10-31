@@ -5,7 +5,7 @@ define('partners-section', ['jquery'], function ($) {
 
 	var partners = {
 		render: function () {
-			$('#partners').load('../views/partners_section.html');
+			$('#partners').load('views/partners_section.html');
 		}
 	};
 

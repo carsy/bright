@@ -5,7 +5,7 @@ define('what-section', ['jquery'], function ($) {
 
 	var section = {
 		render: function (callback) {
-			$('#what').load('../views/what_section.html', callback);
+			$('#what').load('views/what_section.html', callback);
 		},
 		load: function () {
 
