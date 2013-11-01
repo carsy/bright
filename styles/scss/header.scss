@@ -1,71 +1,86 @@
 @import 'app';
 
-#home_header {
-	position: fixed;
-	width: 100%;
-	z-index: 2;
-
-	.dummy-background-1 {
-		background: $gray2;
-		height: 50%;
+@mixin header-bg($top-color, $bottom-color) {
+	.bg-top {
+		background: $top-color;
 	}
 
-	.dummy-background-2 {
-		background: $gray1;
-		height: 50%;
-		top: 50%;
+	.bg-bottom {
+		background: $bottom-color;
 	}
-
-	.header-logo, .header-nav {
-		position: relative;
-		z-index: 10;
-	}
-
 }
 
-.section-header {
-	margin: auto;
+#header {
 
-	.header-logo {
-		float: left;
+	#bg-container {
+		position: fixed;
+		width: 100%;
+		z-index: 2;
 
-		a {
-			font-family: Bloo !important;
-			font-size: 40px;
-			line-height: 40px;
-			letter-spacing: 4px;
+		.bg-top, .bg-bottom {
+			height: 50%;
 
-			margin: 0;
-			padding: 0;
+			width: 100%;
+			position: absolute;
 		}
+
+		.bg-bottom {
+			top: 50%;
+		}
+
+		&.header-bg-home {
+			@include header-bg($home-bg1, $home-bg2);
+		}
+		&.header-bg-what {
+			@include header-bg($what-bg1, $what-bg2);
+		}
+		&.header-bg-who {
+			@include header-bg($who-bg1, $who-bg2);
+		}
+		&.header-bg-news {
+			@include header-bg($news-bg1, $news-bg2);
+		}
+		&.header-bg-partners {
+			@include header-bg($partners-bg1, $partners-bg2);
+		}
+		
 	}
 
-	.header-nav {
-		display: inline-block;
+	.content-container {
 
-		font-weight: bold;
-		font-size: 12px;
-		text-align: center;
+		.header-logo, .header-nav {
+			position: relative;
+		}
 
-		height: 100%;
-		padding-top: 6px;
-		vertical-align: middle;
+		.header-logo {
+			a {
+				font-family: Bloo !important;
+				font-size: 2.5em;
+				line-height: 80px;
+				letter-spacing: 4px;
+			}
+		}
 
-		span {
+		.header-nav {
+			font-weight: bold;
+			font-size: 0.75em;
+			text-align: center;
 
-			float: right;
-			display: inline-block;
+			padding-top: 32px;
 
-			vertical-align: middle;
+			span {
 
-			a:hover {
-				-webkit-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
-				-moz-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
-				border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+				float: right;
 
-					/* refactor font-size and border-width */
-				border-width: 0px 0px 8px 0px;
-				border-style: solid;
+				a:hover {
+					// -webkit-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+					// -moz-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+					// border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
+
+						/* refactor font-size and border-width */
+					// border-width: 0px 0px 8px 0px;
+					// border-style: solid;
+				}
 			}
 		}
 	}

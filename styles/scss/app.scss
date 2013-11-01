@@ -24,21 +24,30 @@ $pad-correction: 20px;
 /* colors */
 $gray1: #515151;
 $gray2: #424242;
+$home-bg1: $gray2;
+$home-bg2: $gray1;
 
-$orange1: #fcb525;
-$orange2: #ffc324;
+$yellow1: #fcb525;
+$yellow2: #ffc324;
+$what-bg1: $yellow1;
+$what-bg2: $yellow2;
 
 $blue1: #66ccc6;
 $blue2: #3abebe;
+$who-bg1: $blue1;
+$who-bg2: $blue2;
 
 $green1: #40bb6a;
 $green2: #78ce7e;
+$news-bg1: $green1;
+$news-bg2: $green2;
 
 $gray3: #7b7979;
 
 $red1: #f46d57;
 $red2: #ff0000;
-
+$partners-bg1: $red1;
+$partners-bg2: $red2;
 
 @mixin content-center {
 	max-width: $max-width;

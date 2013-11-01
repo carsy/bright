@@ -2,22 +2,6 @@
 
 #what {
 
-	#what_header.dummy-separator {
-		position: relative;
-
-		.dummy-background-1 {
-			height: 50%;
-			top: 0;
-			background: $orange1;
-		}
-
-		.dummy-background-2 {
-			height: 50%;
-			top: 50%;
-			background: $orange2;
-		}
-	}
-
 	& > .dummy-background-1 {
 		position: relative;
 		z-index: 0;
@@ -26,7 +10,7 @@
 			position: absolute;
 			width: 50%;
 			left: 50%;
-			background: $orange2;
+			background: $yellow2;
 		}
 	}
 
@@ -99,7 +83,7 @@
 
 
 		.content-title {
-			background: $orange2;
+			background: $yellow2;
 
 			position: relative;
 
@@ -119,13 +103,13 @@
 
 				h1 {
 					line-height: 1em;
-					color: $orange1;
+					color: $yellow1;
 					margin: 0;
 					overflow: hidden;
 				}
 				hr {
 					height: 3px;
-					background-color: $orange2;
+					background-color: $yellow2;
 					border: 0;
 					width: 55%;
 					margin: 20px 0px;
@@ -150,7 +134,7 @@
 
 				.dummy-background {
 					top: 0;
-					background: $orange2;
+					background: $yellow2;
 
 					-webkit-border-radius: 0px 0px 0px 100px;
 					-moz-border-radius: 0px 0px 0px 100px;

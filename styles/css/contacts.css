@@ -21,7 +21,7 @@ a {
 
 /* dimensions */
 /* colors */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000358}}
 .section-header {
   max-width: 800px;
   margin: auto;
@@ -30,13 +30,13 @@ a {
   padding: 25px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000365}}
 .section-content {
   max-width: 800px;
   margin: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/app\.scss}line{font-family:\0000373}}
 .dummy-background,
 .dummy-background-1,
 .dummy-background-2,
@@ -52,53 +52,49 @@ a {
 #contacts {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\000038}}
-#contacts #contacts_header .dummy-background-1, #contacts #contacts_header .dummy-background-2 {
-  background: #f46d57;
-  z-index: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\000036}}
 #contacts > .dummy-background-1 {
   position: relative;
   z-index: 1;
+  background: #f46d57;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000311}}
 #contacts > .dummy-background-1 .grid-container {
   padding: 50px 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000315}}
 #contacts > .dummy-background-1 .content-info {
   color: white;
   font-size: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000319}}
 #contacts > .dummy-background-1 .content-info span {
   padding-bottom: 8px;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000326}}
 #contacts > .dummy-background-1 .content-map {
   height: 400px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000331}}
 #contacts > .dummy-background-2 {
   position: relative;
   background: white;
   z-index: 0;
   margin-top: -7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000338}}
 #contacts > .dummy-background-2 .section-content {
   background-color: white;
   background-image: url("../../images/contacts-background.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000345}}
 #contacts > .dummy-background-2 .content-container {
   padding: 50px 20px 50px 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000349}}
 #contacts > .dummy-background-2 .content-header {
   color: red;
   display: block;
@@ -106,7 +102,7 @@ a {
   font-weight: bold;
   padding-bottom: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/carsy\/ws\/bright\/styles\/scss\/contacts\.scss}line{font-family:\0000357}}
 #contacts > .dummy-background-2 .content {
   font-size: 12px;
 }

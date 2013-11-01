@@ -3,18 +3,10 @@
 #contacts {
 	position: relative;
 
-	#contacts_header {
-
-		.dummy-background-1, .dummy-background-2 {
-			background: $red1;
-
-			z-index: 0;
-		}
-	}
-
 	& > .dummy-background-1 {
 		position: relative;
 		z-index: 1;
+			background: $red1;
 
 		.grid-container {
 			padding: 50px 20px;
