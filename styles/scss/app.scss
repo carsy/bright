@@ -63,6 +63,8 @@ $partners-bg2: $red2;
 /* text colors and stuff */
 $text: #4c4c4c;
 
+/* MIXINS */
+
 @mixin content-center {
 	max-width: $max-width;
 	margin: auto;
@@ -72,16 +74,43 @@ $text: #4c4c4c;
 	margin: 0px $margins 0px $margins;
 }
 
-.section-content {
-	@include content-center;
+/* media queries mixins */
 
+@mixin mq-height($width, $height) {
+  @media screen and (max-width: $width) {
+    height: $height;
+  }
 }
+
+@mixin mq-fz($width, $fz) {
+  @include mq-fontsize($width, $fz);
+}
+
+@mixin mq-fontsize($width, $fz) {
+  @media screen and (max-width : $width) 
+  {
+    font-size: $fz;
+  }
+}
+
+@mixin mq-padding($width, $top, $right, $bottom, $left) {
+  @media screen and (max-width: $width) {
+    padding: $top $right $bottom $right;
+  }
+}
+
+@mixin mq-hide($width) {
+  @media screen and (max-width: $width) {
+    display: none;
+  }
+}
+
 
 * {
   @include box-sizing(border-box);
 }
 
-/* grids */
+/* GRIDS */
 
 $pad: 10px;
 

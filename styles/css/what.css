@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$what-bg1".
-        on line 28 of /home/carsy/ws/bright/styles/scss/what.scss
+        on line 24 of /home/carsy/ws/bright/styles/scss/what.scss
 
 Backtrace:
-/home/carsy/ws/bright/styles/scss/what.scss:28
+/home/carsy/ws/bright/styles/scss/what.scss:24
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$what-bg1\".\A         on line 28 of /home/carsy/ws/bright/styles/scss/what.scss"; }
+  content: "Syntax error: Undefined variable: \"$what-bg1\".\A         on line 24 of /home/carsy/ws/bright/styles/scss/what.scss"; }

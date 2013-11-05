@@ -59,8 +59,10 @@
 
 			a {
 				font-family: Bloo !important;
-				font-size: 3.5em;
 				letter-spacing: 4px;
+				font-size: 3.5em;
+
+				@include mq-fz(800px, 2em);
 			}
 		}
 
