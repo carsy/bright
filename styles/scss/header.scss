@@ -10,7 +10,7 @@
 
 #header {
 
-	.bg-container {
+	.content-container {
 		z-index: 1;
 		position: fixed;
 		width: 100%;
@@ -42,16 +42,12 @@
 		&.header-bg-partners {
 			@include header-bg($partners-bg1, $partners-bg2);
 		}
-		
-	}
-
-	.content-container {
-		@include outer-margins();
 
 		.header-logo, .header-nav {
 			position: relative;
 			max-height: $header-height;
 			line-height: $header-height;
+			padding: 0px $margins 0px $margins;
 		}
 
 		.header-logo {

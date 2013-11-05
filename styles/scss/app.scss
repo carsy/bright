@@ -70,10 +70,6 @@ $text: #4c4c4c;
 	margin: auto;
 }
 
-@mixin outer-margins {
-	margin: 0px $margins 0px $margins;
-}
-
 /* media queries mixins */
 
 @mixin mq-height($width, $height) {
