@@ -16,10 +16,10 @@ require.config({
 		'gmaps': '../vendor/gmaps/gmaps',
 		'async': '../vendor/requirejs-plugins/src/async'
 	}
-});
+})
 
 require(['app'], function (app) {
 	'use strict';
 
 	console.log('%c' + app, 'background: lightgray; color: gray');
-});
+})

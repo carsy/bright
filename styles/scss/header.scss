@@ -1,5 +1,3 @@
-@import 'app';
-
 @mixin header-bg($top-color, $bottom-color) {
 	.bg-top {
 		background: $top-color;
@@ -12,16 +10,17 @@
 
 #header {
 
-	#bg-container {
+	.bg-container {
+		z-index: 1;
 		position: fixed;
 		width: 100%;
-		z-index: 2;
+		max-height: $header-height;
 
 		.bg-top, .bg-bottom {
-			height: 50%;
-
-			width: 100%;
 			position: absolute;
+
+			height: 50%;
+			width: 100%;
 		}
 
 		.bg-bottom {
@@ -47,41 +46,30 @@
 	}
 
 	.content-container {
+		@include outer-margins();
 
 		.header-logo, .header-nav {
 			position: relative;
+			max-height: $header-height;
+			line-height: $header-height;
 		}
 
 		.header-logo {
+			float: left;
+
 			a {
 				font-family: Bloo !important;
-				font-size: 2.5em;
-				line-height: 80px;
+				font-size: 3.5em;
 				letter-spacing: 4px;
 			}
 		}
 
 		.header-nav {
 			font-weight: bold;
-			font-size: 0.75em;
 			text-align: center;
-
-			padding-top: 32px;
-
-			span {
-
-				float: right;
-
-				a:hover {
-					// -webkit-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
-					// -moz-border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
-					// border-image: url('../../images/underline.svg') 0 0 8 fill repeat;
-
-						/* refactor font-size and border-width */
-					// border-width: 0px 0px 8px 0px;
-					// border-style: solid;
-				}
-			}
+			float: right;
+			
+			width: 600px;
 		}
 	}
 }

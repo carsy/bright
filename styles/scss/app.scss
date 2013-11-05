@@ -8,6 +8,11 @@
 	src: url("../../fonts/bloo/blooone.otf");
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 * {
 	font-family: Akkurat;
 }
@@ -20,15 +25,21 @@ a {
 /* dimensions */
 $max-width: 800px;
 $pad-correction: 20px;
+$header-height: 100px;
 
-/* colors */
-$gray1: #515151;
-$gray2: #424242;
-$home-bg1: $gray2;
-$home-bg2: $gray1;
+$margins: 40px;
 
-$yellow1: #fcb525;
-$yellow2: #ffc324;
+/* COLORS */
+
+/* backgrounds`*/
+$gray1: #333333;
+$gray2: #404040;
+$home-bg1: $gray1;
+$home-bg2: $gray2;
+
+$yellow1: #ffb600;
+$yellow2: #fcd23b;
+$yellow3: #fcce49;
 $what-bg1: $yellow1;
 $what-bg2: $yellow2;
 
@@ -49,17 +60,16 @@ $red2: #ff0000;
 $partners-bg1: $red1;
 $partners-bg2: $red2;
 
+/* text colors and stuff */
+$text: #4c4c4c;
+
 @mixin content-center {
 	max-width: $max-width;
 	margin: auto;
 }
 
-
-.section-header {
-	@include content-center;
-	height: 30px;
-	width: $max-width - 2 * $pad-correction;
-	padding: 25px $pad-correction;
+@mixin outer-margins {
+	margin: 0px $margins 0px $margins;
 }
 
 .section-content {
@@ -67,13 +77,72 @@ $partners-bg2: $red2;
 
 }
 
-.dummy-background, 
-.dummy-background-1, 
-.dummy-background-2,
-.dummy-background-3 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  z-index: -1;
+* {
+  @include box-sizing(border-box);
 }
+
+/* grids */
+
+$pad: 10px;
+
+.grid {
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: $pad;
+
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+}
+.col-60 {
+  width: 60%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-30 {
+  width: 30%;
+}
+.col-25 {
+  width: 25%;
+}
+.col-20 {
+  width: 20%;
+}
+.col-10 {
+  width: 10%;
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+
+/* Section Styles */
+
+@import 'header';
+
+@import 'home';
+
+@import 'what';
+
+@import 'who';
+
+@import 'news';
+
+@import 'partners';
+
+@import 'contacts';
+
+@import 'footer';

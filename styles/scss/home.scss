@@ -1,15 +1,14 @@
-@import 'app';
-
 #home {
 	width: 100%;
 
-	& > .dummy-background-1 {
+	.container {
 		position: relative;
 		height: 100%;
 
-		img#front-cover {
+		#front-cover {
 			width: 100%;
-			margin-top: 80px;
+			height: auto;
+			margin-top: $header-height;
 
 		}
 	}

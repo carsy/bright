@@ -5,9 +5,9 @@ module.exports = function (grunt) {
   'use strict';
 
   // show elapsed time at the end
-  require('time-grunt')(grunt);
+  require('time-grunt')(grunt)
   // load all grunt tasks
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt)
 
   // Project configuration.
   grunt.initConfig({
@@ -35,6 +35,7 @@ module.exports = function (grunt) {
         boss: true,
         eqnull: true,
         browser: true,
+        asi: true,
         globals: {
           jQuery: true
         }
@@ -124,7 +125,7 @@ module.exports = function (grunt) {
         }
       }
     }
-  });
+  })
 
   grunt.registerTask('server', function () {
     grunt.task.run([
@@ -132,14 +133,14 @@ module.exports = function (grunt) {
       'connect:livereload',
       'compass:server',
       'watch'
-    ]);
-  });
+    ])
+  })
 
   grunt.registerTask('build', function () {
     grunt.task.run([]); // TODO: minify all the things: scripts, css, html, images
-  });
+  })
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'autoprefixer', 'compass']);
+  grunt.registerTask('default', ['jshint', 'autoprefixer', 'compass'])
 
-};
+}
