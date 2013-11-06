@@ -14,7 +14,9 @@
 		z-index: 1;
 		position: fixed;
 		width: 100%;
-		max-height: $header-height;
+		height: $header-height;
+
+		@include mq-header-breakpoints();
 
 		.bg-top, .bg-bottom {
 			position: absolute;
@@ -45,20 +47,34 @@
 
 		.header-logo, .header-nav {
 			position: relative;
-			max-height: $header-height;
+			height: $header-height;
 			line-height: $header-height;
-			padding: 0px $margins 0px $margins;
+
+			@include mq-header-breakpoints();
+		}
+
+		@include break-480() {
+			text-align: center;
 		}
 
 		.header-logo {
 			float: left;
+
+			@include outer-left-pad();
+
+			@include break-480() {
+				padding-left: 0px;
+				float: none;
+			};
 
 			a {
 				font-family: Bloo !important;
 				letter-spacing: 4px;
 				font-size: 3.5em;
 
-				@include mq-fz(800px, 2em);
+				@include mq-fz($break-1024px, 3em);
+				@include mq-fz($break-800px, 2em);
+				@include mq-fz($break-640px, 1.5em);
 			}
 		}
 
@@ -67,7 +83,25 @@
 			text-align: center;
 			float: right;
 			
-			width: 600px;
+  		padding-right: $outer-pads;
+
+  		@include break-1024() { padding-right: $outer-pad2; };
+  		@include break-800() { padding-right: $outer-pad3; };
+  		@include break-640() { padding-right: $outer-pad4; };
+  		@include break-480() { padding-right: $outer-pad5; };
+
+  		@media screen and (max-width: 380px) {
+  			display: none;
+
+  		}
+
+			a {
+				font-size: 1em;
+
+				@include mq-fz($break-1024px, 0.9em);
+				@include mq-fz($break-800px, 0.6em);
+				@include mq-fz($break-640px, 0.5em);
+			}
 		}
 	}
 }

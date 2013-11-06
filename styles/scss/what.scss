@@ -64,14 +64,14 @@
 				border: 0;
 				width: 55%;
 				margin: 20px 0px;
-				
+
 				@include mq-hide(600px);
 			}
 			p { 
 				font-size: 1.25em;
 				color: $text;
 
-				@include mq-fontsize(1000px, 1em);
+				@include mq-fontsize(1024px, 1em);
 				@include mq-fontsize(800px, 0.8em);
 				@include mq-hide(600px);
 			}

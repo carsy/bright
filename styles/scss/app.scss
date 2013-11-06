@@ -1,3 +1,5 @@
+@import 'media_queries';
+
 @font-face {
 	font-family: Akkurat;
 	src: url("../../fonts/akkurat/Akkurat.otf");
@@ -25,9 +27,7 @@ a {
 /* dimensions */
 $max-width: 800px;
 $pad-correction: 20px;
-$header-height: 100px;
 
-$margins: 40px;
 
 /* COLORS */
 
@@ -70,37 +70,9 @@ $text: #4c4c4c;
 	margin: auto;
 }
 
-/* media queries mixins */
-
-@mixin mq-height($width, $height) {
-  @media screen and (max-width: $width) {
-    height: $height;
-  }
+@mixin outer-left-pad {
+  padding-left: $outer-pads;
 }
-
-@mixin mq-fz($width, $fz) {
-  @include mq-fontsize($width, $fz);
-}
-
-@mixin mq-fontsize($width, $fz) {
-  @media screen and (max-width : $width) 
-  {
-    font-size: $fz;
-  }
-}
-
-@mixin mq-padding($width, $top, $right, $bottom, $left) {
-  @media screen and (max-width: $width) {
-    padding: $top $right $bottom $right;
-  }
-}
-
-@mixin mq-hide($width) {
-  @media screen and (max-width: $width) {
-    display: none;
-  }
-}
-
 
 * {
   @include box-sizing(border-box);
@@ -119,40 +91,32 @@ $pad: 10px;
   }
 }
 
-[class*='col-'] {
-  float: left;
+.col {
+  float: right;
   padding-right: $pad;
 
-  .grid &:last-of-type {
+  .grid &:first-of-type {
     padding-right: 0;
   }
 }
-.col-60 {
-  width: 60%;
-}
-.col-50 {
-  width: 50%;
-}
-.col-30 {
-  width: 30%;
-}
-.col-25 {
-  width: 25%;
-}
-.col-20 {
-  width: 20%;
-}
-.col-10 {
-  width: 10%;
+
+.col {
+  padding-right: $outer-pads;
+
+  @include break-1024() { padding-right: $outer-pad2; }
+  @include break-800() { padding-right: $outer-pad3; }
+  @include break-640() { padding-right: $outer-pad4; }
+  @include break-480() { padding-right: $outer-pad5; }
 }
 
 /* Opt-in outside padding */
 .grid-pad {
   padding: $pad 0 $pad $pad;
-  [class*='col-']:last-of-type {
+  .col:last-of-type {
     padding-right: $pad;
   }
 }
+
 
 /* Section Styles */
 

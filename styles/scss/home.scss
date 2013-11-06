@@ -10,6 +10,9 @@
 			height: auto;
 			margin-top: $header-height;
 
+			@include mq-margintop($break-1024px, $header-height2);
+			@include mq-margintop($break-800px, $header-height3);
+			@include mq-margintop($break-640px, $header-height4);
 		}
 	}
 }

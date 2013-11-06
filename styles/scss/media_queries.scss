@@ -1,0 +1,107 @@
+/* 
+	MEDIA QUERIES
+
+	This sass file contains helpers to style a page with media queries.
+*/
+
+// breakpoints
+$break-320px: 320px;
+$break-480px: 480px;
+$break-640px: 640px;
+$break-800px: 800px;
+$break-1024px: 1024px;
+$break-1280px: 1280px;
+$break-1440px: 1440px;
+
+// header heights
+$header-height: 100px; // default height
+$header-height1: $header-height;
+$header-height2: 80px;
+$header-height3: 60px;
+$header-height4: 40px;
+
+
+$outer-pads: 40px;
+$outer-pad1: $outer-pads;
+$outer-pad2: 35px;
+$outer-pad3: 25px;
+$outer-pad4: 20px;
+$outer-pad5: 10px;
+
+
+@mixin break-320() {
+	@media screen and (max-width: $break-320px) {
+		@content;
+	}
+}
+@mixin break-480() {
+	@media screen and (max-width: $break-480px) {
+		@content;
+	}
+}
+@mixin break-640() {
+	@media screen and (max-width: $break-640px) {
+		@content;
+	}
+}
+@mixin break-800() {
+	@media screen and (max-width: $break-800px) {
+		@content;
+	}
+}
+@mixin break-1024() {
+	@media screen and (max-width: $break-1024px) {
+		@content;
+	}
+}
+
+// header height mixin
+@mixin mq-header($width, $height) {
+  @media screen and (max-width: $width) {
+    height: $height;
+    line-height: $height;
+  }
+}
+
+@mixin mq-header-breakpoints() {
+	@include mq-header($break-1024px, $header-height2);
+	@include mq-header($break-800px, $header-height3);
+	@include mq-header($break-640px, $header-height4);
+}
+
+
+@mixin mq-height($width, $height) {
+  @media screen and (max-width: $width) {
+    height: $height;
+  }
+}
+
+@mixin mq-margintop($width, $margin) {
+  @media screen and (max-width: $width) {
+    margin-top: $margin;
+  }
+  
+}
+
+@mixin mq-fz($width, $fz) {
+  @include mq-fontsize($width, $fz);
+}
+
+@mixin mq-fontsize($width, $fz) {
+  @media screen and (max-width : $width) 
+  {
+    font-size: $fz;
+  }
+}
+
+@mixin mq-padding($width, $top, $right, $bottom, $left) {
+  @media screen and (max-width: $width) {
+    padding: $top $right $bottom $right;
+  }
+}
+
+@mixin mq-hide($width) {
+  @media screen and (max-width: $width) {
+    display: none;
+  }
+}
