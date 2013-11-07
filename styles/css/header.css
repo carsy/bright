@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$header-height".
-        on line 17 of /home/carsy/ws/bright/styles/scss/header.scss
+        on line 13 of /home/carsy/ws/bright/styles/scss/header.scss
 
 Backtrace:
-/home/carsy/ws/bright/styles/scss/header.scss:17
+/home/carsy/ws/bright/styles/scss/header.scss:13
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$header-height\".\A         on line 17 of /home/carsy/ws/bright/styles/scss/header.scss"; }
+  content: "Syntax error: Undefined variable: \"$header-height\".\A         on line 13 of /home/carsy/ws/bright/styles/scss/header.scss"; }

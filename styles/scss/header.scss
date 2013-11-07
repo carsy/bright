@@ -9,12 +9,17 @@
 }
 
 #header {
+	.header-ghost {
+		height: $header-height;
+		@include mq-header-breakpoints();
+	}
 
 	.content-container {
 		z-index: 1;
 		position: fixed;
 		width: 100%;
 		height: $header-height;
+		top: 0;
 
 		@include mq-header-breakpoints();
 

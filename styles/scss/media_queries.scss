@@ -74,7 +74,6 @@ $outer-pad5: 10px;
 	@include mq-header($break-640px, $header-height4);
 }
 
-
 @mixin mq-height($width, $height) {
   @media screen and (max-width: $width) {
     height: $height;
@@ -85,7 +84,25 @@ $outer-pad5: 10px;
   @media screen and (max-width: $width) {
     margin-top: $margin;
   }
-  
+}
+
+
+@mixin outer-left-pad {
+      padding-left: $outer-pad;
+
+      @include break-1024() { padding-left: $outer-pad2; };
+      @include break-800() { padding-left: $outer-pad3; };
+      @include break-640() { padding-left: $outer-pad4; };
+      @include break-480() { padding-left: $outer-pad5; };
+}
+
+@mixin outer-right-pad {
+      padding-right: $outer-pad;
+
+      @include break-1024() { padding-right: $outer-pad2; };
+      @include break-800() { padding-right: $outer-pad3; };
+      @include break-640() { padding-right: $outer-pad4; };
+      @include break-480() { padding-right: $outer-pad5; };
 }
 
 @mixin mq-fz($width, $fz) {
@@ -101,8 +118,23 @@ $outer-pad5: 10px;
 
 @mixin mq-padding($width, $top, $right, $bottom, $left) {
   @media screen and (max-width: $width) {
-    padding: $top $right $bottom $right;
+    padding: $top $right $bottom $left;
   }
+}
+
+@mixin mq-border-radius-breaks($corner) {
+	#{$corner}: 100px;
+
+	@include mq-border-radius(1024px, $corner, 80px);
+	@include mq-border-radius(800px, $corner, 60px);
+	@include mq-border-radius(480px, $corner, 40px);
+	@include mq-border-radius(320px, $corner, 20px);
+}
+
+@mixin mq-border-radius($width, $corner, $radius) {
+	@media screen and (max-width: $width) {
+		#{$corner}: $radius;
+	}
 }
 
 @mixin mq-hide($width) {
