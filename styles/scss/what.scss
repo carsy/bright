@@ -31,6 +31,7 @@
 
 		.content-left, .content-right {
 			width: 50%;
+			height: 100%;
 			float: left;
 		}
 
@@ -40,6 +41,7 @@
 
 			@include mq-padding(1440px, 80px, 125px, 80px, 60px);
 			@include mq-padding(1280px, 60px, 100px, 60px, 50px);
+			@include mq-padding(1024px, 40px, 75px, 40px, 40px);
 
 			@include mq-border-radius-breaks(border-top-right-radius);
 			
@@ -53,8 +55,7 @@
 				@include mq-fontsize(1440px, 5em);
 				@include mq-fontsize(1280px, 4.25em);
 				@include mq-fontsize(1024px, 3.25em);
-				@include mq-fontsize(800px, 2em);
-
+				@include mq-fontsize(800px, 2.25em);
 			}
 			hr {
 				height: 3px;
@@ -70,8 +71,8 @@
 				color: $text;
 
 				@include mq-fontsize(1280px, 1.25em);
-				@include mq-fontsize(1024px, 0.725em);
-				@include mq-fontsize(800px, 0.5em);
+				@include mq-fontsize(1024px, 1em);
+				@include mq-fontsize(800px, 0.8em);
 				@include mq-hide(600px);
 			}
 		}
@@ -79,18 +80,20 @@
 		.content-right {
 			position: absolute;
 			left: 50%;
-			height: 100%;
-			padding: 80px 0px 80px 0px;
 
 			background: $what-bg1;
 
 			@include mq-border-radius-breaks(border-bottom-left-radius);
 
-			img {
+			.img {
 				height: 100%;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
+				width: 100%;
+				vertical-align: middle;
+
+				background-image: url('../../images/what-we-do-cover.png');
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 70%;
 			}
 		}
 	}
