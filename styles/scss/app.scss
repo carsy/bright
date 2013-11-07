@@ -71,7 +71,21 @@ $text: #4c4c4c;
 }
 
 @mixin outer-left-pad {
-  padding-left: $outer-pads;
+      padding-left: $outer-pad;
+
+      @include break-1024() { padding-left: $outer-pad2; };
+      @include break-800() { padding-left: $outer-pad3; };
+      @include break-640() { padding-left: $outer-pad4; };
+      @include break-480() { padding-left: $outer-pad5; };
+}
+
+@mixin outer-right-pad {
+      padding-right: $outer-pad;
+
+      @include break-1024() { padding-right: $outer-pad2; };
+      @include break-800() { padding-right: $outer-pad3; };
+      @include break-640() { padding-right: $outer-pad4; };
+      @include break-480() { padding-right: $outer-pad5; };
 }
 
 * {
@@ -101,7 +115,7 @@ $pad: 10px;
 }
 
 .col {
-  padding-right: $outer-pads;
+  padding-right: $outer-pad;
 
   @include break-1024() { padding-right: $outer-pad2; }
   @include break-800() { padding-right: $outer-pad3; }

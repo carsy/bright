@@ -6,6 +6,7 @@
 
 // breakpoints
 $break-320px: 320px;
+$break-380px: 380px;
 $break-480px: 480px;
 $break-640px: 640px;
 $break-800px: 800px;
@@ -21,16 +22,20 @@ $header-height3: 60px;
 $header-height4: 40px;
 
 
-$outer-pads: 40px;
-$outer-pad1: $outer-pads;
+$outer-pad: 40px;
+$outer-pad1: $outer-pad;
 $outer-pad2: 35px;
 $outer-pad3: 25px;
 $outer-pad4: 20px;
 $outer-pad5: 10px;
 
-
 @mixin break-320() {
 	@media screen and (max-width: $break-320px) {
+		@content;
+	}
+}
+@mixin break-380() {
+	@media screen and (max-width: $break-380px) {
 		@content;
 	}
 }

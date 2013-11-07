@@ -53,7 +53,7 @@
 			@include mq-header-breakpoints();
 		}
 
-		@include break-480() {
+		@include break-380() {
 			text-align: center;
 		}
 
@@ -62,7 +62,7 @@
 
 			@include outer-left-pad();
 
-			@include break-480() {
+			@include break-380() {
 				padding-left: 0px;
 				float: none;
 			};
@@ -83,17 +83,8 @@
 			text-align: center;
 			float: right;
 			
-  		padding-right: $outer-pads;
-
-  		@include break-1024() { padding-right: $outer-pad2; };
-  		@include break-800() { padding-right: $outer-pad3; };
-  		@include break-640() { padding-right: $outer-pad4; };
-  		@include break-480() { padding-right: $outer-pad5; };
-
-  		@media screen and (max-width: 380px) {
-  			display: none;
-
-  		}
+  		@include outer-right-pad();
+  		@include break-380() { display: none; };
 
 			a {
 				font-size: 1em;

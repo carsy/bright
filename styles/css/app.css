@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'box-sizing'.
-        on line 78 of /home/carsy/ws/bright/styles/scss/app.scss, in `box-sizing'
-        from line 78 of /home/carsy/ws/bright/styles/scss/app.scss
+        on line 92 of /home/carsy/ws/bright/styles/scss/app.scss, in `box-sizing'
+        from line 92 of /home/carsy/ws/bright/styles/scss/app.scss
 
 Backtrace:
-/home/carsy/ws/bright/styles/scss/app.scss:78:in `box-sizing'
-/home/carsy/ws/bright/styles/scss/app.scss:78
+/home/carsy/ws/bright/styles/scss/app.scss:92:in `box-sizing'
+/home/carsy/ws/bright/styles/scss/app.scss:92
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -58,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'box-sizing'.\A         on line 78 of /home/carsy/ws/bright/styles/scss/app.scss, in `box-sizing'\A         from line 78 of /home/carsy/ws/bright/styles/scss/app.scss"; }
+  content: "Syntax error: Undefined mixin 'box-sizing'.\A         on line 92 of /home/carsy/ws/bright/styles/scss/app.scss, in `box-sizing'\A         from line 92 of /home/carsy/ws/bright/styles/scss/app.scss"; }
