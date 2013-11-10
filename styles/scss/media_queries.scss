@@ -59,6 +59,16 @@ $outer-pad5: 10px;
 		@content;
 	}
 }
+@mixin break-1280() {
+	@media screen and (max-width: $break-1280px) {
+		@content;
+	}
+}
+@mixin min-break-1280() {
+	@media screen and (min-width: $break-1280px) {
+		@content;
+	}
+}
 
 // header height mixin
 @mixin mq-header($width, $height) {

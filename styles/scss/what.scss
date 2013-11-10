@@ -1,29 +1,30 @@
 #what {
 
-	.bg-right-white, .bg-left-yellow {
+	.bg-right, .bg-white, .bg-left, .bg-yellow {
 		width: 50%;
 		position: absolute;
 		z-index: -1;
 		height: 100%;
 
-		&.bg-left-yellow {
+		&.bg-left {
 			left: 0;
 		}
-
-		&.bg-right-white {
+		&.bg-right {
 			left: 50%;
 		}
-
-		&.bg-right-white {
+		&.bg-yellow {
+			background: $what-bg1;
+		}
+		&.bg-white {
 			background: white;
-			z-index: -2;
 		}
 
-		&.bg-left-yellow {
-			background: $what-bg1;
-			z-index: -2;
+		&.bg-right.bg-yellow {
+			@include mq-border-radius-breaks(border-bottom-left-radius);
 		}
 	}
+
+	.bg-container { position: relative; }
 
 	.content-container {
 		position: relative;
@@ -39,7 +40,7 @@
 			background: white;
 			padding: 80px 150px 80px 100px;
 
-			@include mq-padding(1440px, 80px, 125px, 80px, 60px);
+			@include mq-padding(1440px, 80px, 130px, 80px, 80px);
 			@include mq-padding(1280px, 60px, 100px, 60px, 50px);
 			@include mq-padding(1024px, 40px, 60px, 40px, 40px);
 			@include mq-padding(800px, 30px, 40px, 30px, 30px);
@@ -47,14 +48,17 @@
 
 			@include mq-border-radius-breaks(border-top-right-radius);
 			
+			@include break-380() {
+				width: 100%;
+			}
 
 			h1 {
 				line-height: 1em;
 				color: $yellow1;
 				margin: 0;
-				font-size: 6.25em;
+				font-size: 5em;
 
-				@include mq-fontsize(1440px, 5.25em);
+				@include mq-fontsize(1440px, 3.5em);
 				@include mq-fontsize(1280px, 4.25em);
 				@include mq-fontsize(1024px, 3.25em);
 				@include mq-fontsize(800px, 2.25em);
@@ -70,10 +74,10 @@
 				@include mq-hide(480px);
 			}
 			p { 
-				font-size: 1.5em;
+				font-size: 1.2em;
 				color: $text;
 
-				@include mq-fontsize(1280px, 1.25em);
+				@include mq-fontsize(1280px, 1.1em);
 				@include mq-fontsize(1024px, 1em);
 				@include mq-fontsize(800px, 0.8em);
 				@include mq-fontsize(640px, 0.6em);
@@ -84,10 +88,10 @@
 		.content-right {
 			position: absolute;
 			left: 50%;
-
-			background: $what-bg1;
-
-			@include mq-border-radius-breaks(border-bottom-left-radius);
+			
+			@include break-380() {
+				display: none;
+			}
 
 			.img {
 				height: 100%;

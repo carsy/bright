@@ -113,6 +113,13 @@ $pad: 10px;
   }
 }
 
+.content-container {
+  @include min-break-1280() {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
 
 /* Section Styles */
 

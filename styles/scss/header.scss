@@ -14,7 +14,7 @@
 		@include mq-header-breakpoints();
 	}
 
-	.content-container {
+	.bg-container {
 		z-index: 1;
 		position: fixed;
 		width: 100%;
@@ -50,53 +50,56 @@
 			@include header-bg($partners-bg1, $partners-bg2);
 		}
 
-		.header-logo, .header-nav {
-			position: relative;
-			height: $header-height;
-			line-height: $header-height;
+		.content-container {
 
-			@include mq-header-breakpoints();
-		}
+			.header-logo, .header-nav {
+				position: relative;
+				height: $header-height;
+				line-height: $header-height;
 
-		@include break-380() {
-			text-align: center;
-		}
-
-		.header-logo {
-			float: left;
-
-			@include outer-left-pad();
+				@include mq-header-breakpoints();
+			}
 
 			@include break-380() {
-				padding-left: 0px;
-				float: none;
-			};
-
-			a {
-				font-family: Bloo !important;
-				letter-spacing: 4px;
-				font-size: 3.5em;
-
-				@include mq-fz($break-1024px, 3em);
-				@include mq-fz($break-800px, 2em);
-				@include mq-fz($break-640px, 1.5em);
+				text-align: center;
 			}
-		}
 
-		.header-nav {
-			font-weight: bold;
-			text-align: center;
-			float: right;
-			
-  		@include outer-right-pad();
-  		@include break-380() { display: none; };
+			.header-logo {
+				float: left;
 
-			a {
-				font-size: 1em;
+				@include outer-left-pad();
 
-				@include mq-fz($break-1024px, 0.9em);
-				@include mq-fz($break-800px, 0.6em);
-				@include mq-fz($break-640px, 0.5em);
+				@include break-380() {
+					padding-left: 0px;
+					float: none;
+				};
+
+				a {
+					font-family: Bloo !important;
+					letter-spacing: 4px;
+					font-size: 3.5em;
+
+					@include mq-fz($break-1024px, 3em);
+					@include mq-fz($break-800px, 2em);
+					@include mq-fz($break-640px, 1.5em);
+				}
+			}
+
+			.header-nav {
+				font-weight: bold;
+				text-align: center;
+				float: right;
+				
+	  		@include outer-right-pad();
+	  		@include break-380() { display: none; };
+
+				a {
+					font-size: 1em;
+
+					@include mq-fz($break-1024px, 0.9em);
+					@include mq-fz($break-800px, 0.6em);
+					@include mq-fz($break-640px, 0.5em);
+				}
 			}
 		}
 	}
