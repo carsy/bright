@@ -15,6 +15,10 @@ html, body {
   width: 100%;
 }
 
+html {
+  min-width: 220px;
+}
+
 * {
 	font-family: Akkurat;
 }
@@ -27,7 +31,6 @@ a {
 /* dimensions */
 $max-width: 800px;
 $pad-correction: 20px;
-
 
 /* COLORS */
 
@@ -71,7 +74,11 @@ $text: #4c4c4c;
 }
 
 * {
-  @include box-sizing(border-box);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  
 }
 
 /* GRIDS */

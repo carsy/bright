@@ -139,6 +139,8 @@
 				font-size: 1.25em;
 				font-weight: bold;
 				letter-spacing: 1px;
+
+				@include mq-fontsize(640px, 1em);
 			}
 
 			&.expanded .item-title {
@@ -150,6 +152,23 @@
 
 				line-height: 1.5em;
 				margin-top: 1.5em;
+
+				@include mq-fontsize(800px, 0.8em);
+				@include mq-fontsize(640px, 0.6em);
+
+			}
+
+			@include break-480() {
+				width: 100%;
+				margin-bottom: 20px;
+
+				&.expanded .item-title {
+					border-bottom: none;
+				}
+
+				.expander {
+					display: none;
+				}
 			}
 		}
 
