@@ -43,11 +43,13 @@
 			background: white;
 			padding: 80px 150px 80px 100px;
 
-			@include mq-padding(1440px, 80px, 130px, 80px, 80px);
-			@include mq-padding(1280px, 60px, 100px, 60px, 50px);
-			@include mq-padding(1024px, 40px, 60px, 40px, 40px);
-			@include mq-padding(800px, 30px, 40px, 30px, 30px);
-			@include mq-padding(640px, 20px, 25px, 20px, 30px);
+			@include mq-padding(1440px, 80px, 130px, 80px, 0px);
+			@include mq-padding(1280px, 60px, 100px, 60px, 0px);
+			@include mq-padding(1024px, 40px, 60px, 40px, 0px);
+			@include mq-padding(800px, 30px, 40px, 30px, 0px);
+			@include mq-padding(640px, 20px, 25px, 20px, 0px);
+
+			@include outer-left-pad();
 
 			@include mq-border-radius-breaks(border-top-right-radius);
 			
@@ -122,7 +124,10 @@
 		color: white;
 
 		.content-container {
-			padding: 40px 40px;
+			padding: 40px 0px;
+
+			@include outer-left-pad();
+			@include outer-right-pad();
 		}
 
 		.item {

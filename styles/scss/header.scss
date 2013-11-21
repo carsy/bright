@@ -70,7 +70,7 @@
 				@include outer-left-pad();
 
 				@include break-380() {
-					padding-left: 0px;
+					padding-left: 0px !important;
 					float: none;
 				};
 

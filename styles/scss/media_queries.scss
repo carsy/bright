@@ -98,21 +98,19 @@ $outer-pad5: 10px;
 
 
 @mixin outer-left-pad {
-      padding-left: $outer-pad;
+      padding-left: $outer-pad !important;
 
-      @include break-1024() { padding-left: $outer-pad2; };
-      @include break-800() { padding-left: $outer-pad3; };
-      @include break-640() { padding-left: $outer-pad4; };
-      @include break-480() { padding-left: $outer-pad5; };
+      @include break-1024() { padding-left: $outer-pad2 !important; };
+      @include break-800() { padding-left: $outer-pad3 !important; };
+      @include break-640() { padding-left: $outer-pad4 !important; };
 }
 
 @mixin outer-right-pad {
-      padding-right: $outer-pad;
+      padding-right: $outer-pad !important;
 
-      @include break-1024() { padding-right: $outer-pad2; };
-      @include break-800() { padding-right: $outer-pad3; };
-      @include break-640() { padding-right: $outer-pad4; };
-      @include break-480() { padding-right: $outer-pad5; };
+      @include break-1024() { padding-right: $outer-pad2 !important; };
+      @include break-800() { padding-right: $outer-pad3 !important; };
+      @include break-640() { padding-right: $outer-pad4 !important; };
 }
 
 @mixin mq-fz($width, $fz) {

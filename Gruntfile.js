@@ -18,7 +18,7 @@ module.exports = function (grunt) {
       images: 'images',
       fonts: 'fonts',
       css: 'styles/css',
-      sass: 'styles/scss'
+      scss: 'styles/scss'
     },
     // Task configuration.
     jshint: {
@@ -54,11 +54,11 @@ module.exports = function (grunt) {
         tasks: ['jshint:gruntfile']
       },
       compass: {
-        files: ['<%= app.sass %>/*.{scss,sass}'],
+        files: ['<%= app.scss %>/*.scss'],
         tasks: ['compass:server', 'autoprefixer']
       },
       styles: {
-        files: ['<%= app.css %>/*.css'],
+        files: ['<%= app.css %>/*.css', '<%= app.scss %>/*.scss'],
         tasks: ['autoprefixer']
       },
       livereload: {
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
     },
     compass: {
       options: {
-        sassDir: '<%= app.sass %>',
+        sassDir: '<%= app.scss %>',
         cssDir: '<%= app.css %>',
         imagesDir: '<%= app.images %>',
         javascriptDir: '<%= app.scripts %>',
